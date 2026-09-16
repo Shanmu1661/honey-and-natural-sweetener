@@ -1,0 +1,110 @@
+/* ==========================================================================
+   AMBER & OAK - RESPONSIVE STYLES (responsive.css)
+   Mobile-first responsive adaptations and layout refinements
+   ========================================================================== */
+
+/* Extra Small to Medium screens (< 992px) */
+@media (max-width: 991.98px) {
+  .hero-artisan {
+    padding: 3.5rem 0 3rem;
+    text-align: center;
+  }
+
+  .hero-main-img {
+    height: 340px;
+    margin-top: 2rem;
+  }
+
+  .hero-floating-card {
+    position: static;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+
+  .site-navbar .navbar-collapse {
+    background: var(--surface-card);
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-hover);
+    margin-top: 0.75rem;
+    border: 1px solid var(--surface-border);
+  }
+
+  .nav-link-custom {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .top-notice-bar {
+    text-align: center;
+  }
+
+  .top-notice-bar .d-flex {
+    justify-content: center !important;
+  }
+
+  .top-notice-bar .contact-items {
+    display: none !important;
+  }
+
+  .product-filter-sidebar {
+    position: static;
+    margin-bottom: 2rem;
+  }
+
+  .comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cart-drawer {
+    max-width: 100%;
+  }
+
+  .footer-col {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small screens (< 768px) */
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .process-step-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .product-card-thumb img {
+    height: 200px;
+  }
+
+  .stats-counter-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-honey,
+  .btn-honey-outline,
+  .btn-forest {
+    width: 100%;
+  }
+
+  .hero-actions-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .checkout-steps-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Large screens and up (>= 1200px) */
+@media (min-width: 1200px) {
+  .container-custom {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

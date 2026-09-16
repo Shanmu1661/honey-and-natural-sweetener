@@ -1,0 +1,181 @@
+/* ==========================================================================
+   AMBER & OAK - ADMIN DASHBOARD STYLES (admin.css)
+   Executive Management System & Store Operations
+   ========================================================================== */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--body-bg);
+}
+
+/* Admin Sidebar */
+.admin-sidebar {
+  width: 260px;
+  background: #171412;
+  color: #DDD5CA;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #2B241F;
+  transition: all var(--transition-fast);
+  z-index: 1030;
+}
+
+.admin-sidebar-header {
+  padding: 1.5rem 1.25rem;
+  border-bottom: 1px solid #2B241F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-nav {
+  list-style: none;
+  padding: 1rem 0.75rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.admin-nav-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem 1rem;
+  color: #B8ADA0;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.925rem;
+  transition: all var(--transition-fast);
+}
+
+.admin-nav-item a i {
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.admin-nav-item a:hover,
+.admin-nav-item.active a {
+  background-color: rgba(217, 119, 6, 0.15);
+  color: #FBBF24;
+}
+
+.admin-nav-item.active a i {
+  color: #F59E0B;
+}
+
+/* Admin Main Content */
+.admin-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.admin-topbar {
+  background: var(--surface-card);
+  border-bottom: 1px solid var(--surface-border);
+  padding: 0.85rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.admin-content-body {
+  padding: 2rem 1.75rem;
+  flex-grow: 1;
+}
+
+/* Admin Metric Cards */
+.admin-card {
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-subtle);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.admin-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.admin-card-title {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-main);
+}
+
+/* Status Badges */
+.status-pill {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.status-pill.delivered { background: #DCFCE7; color: #15803D; }
+.status-pill.processing { background: #FEF3C7; color: #B45309; }
+.status-pill.shipped { background: #DBEAFE; color: #1D4ED8; }
+.status-pill.cancelled { background: #FEE2E2; color: #B91C1C; }
+.status-pill.pending { background: #F3E8FF; color: #6B21A8; }
+
+/* Admin Table Customization */
+.admin-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.admin-table th {
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.admin-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--surface-border);
+  vertical-align: middle;
+  color: var(--text-main);
+}
+
+.admin-table tbody tr:hover td {
+  background-color: var(--honey-50);
+}
+
+@media (max-width: 991.98px) {
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+}

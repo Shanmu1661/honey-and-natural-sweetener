@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — Amber &amp; Oak Artisanal Honey</title>
+  
+  <meta name="description" content="In-depth botanical profile, lab testing certificate, nutritional facts, and customer reviews for raw unheated honey.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <!-- Top Notice Bar -->
+  <div class="top-notice-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="fas fa-certificate text-warning me-1"></i> Lab Certified: 100% Unheated with Live Diastase Enzymes</div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="admin-dashboard/index.html" class="text-warning text-decoration-none small"><i class="fas fa-lock me-1"></i> Admin</a>
+        <a href="user-dashboard/index.html" class="text-warning text-decoration-none small"><i class="fas fa-user me-1"></i> My Account</a>
+        <button class="btn btn-sm btn-outline-warning py-0 px-2 theme-toggle-btn"><i class="fas fa-moon"></i></button>
+        <button class="btn btn-sm btn-outline-warning py-0 px-2 rtl-toggle-btn"><span class="dir-text">RTL</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="navbar-brand-logo text-decoration-none">
+        <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="46">
+      </a>
+      <nav class="d-none d-lg-flex align-items-center gap-1">
+        <a class="nav-link-custom" href="index.html">Home</a>
+        <a class="nav-link-custom" href="about.html">Our Story</a>
+        <a class="nav-link-custom active" href="products.html">Honey Varieties</a>
+        <a class="nav-link-custom" href="health-benefits.html">Health Benefits</a>
+        <a class="nav-link-custom" href="bulk-gifting.html">Bulk &amp; Gifting</a>
+        <a class="nav-link-custom" href="services.html">Services</a>
+        <a class="nav-link-custom" href="blog.html">Journal</a>
+        <a class="nav-link-custom" href="contact.html">Contact</a>
+      </nav>
+      <div class="d-flex align-items-center gap-2">
+        <a href="user-dashboard/wishlist.html" class="nav-icon-btn" title="Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="nav-badge-count wishlist-count-badge" style="display:none;">0</span>
+        </a>
+        <button class="nav-icon-btn cart-drawer-trigger" title="Cart">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="nav-badge-count cart-count-badge" style="display:none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Details Section -->
+  <main class="py-5 bg-surface">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="products.html">Honey Varieties</a></li>
+          <li class="breadcrumb-item active" id="breadcrumb-product-name">Wild Alpine Meadow Honey</li>
+        </ol>
+      </nav>
+
+      <div class="row g-5">
+        <!-- Product Image Gallery -->
+        <div class="col-lg-6">
+          <div class="card border rounded-4 overflow-hidden shadow-sm bg-surface-alt p-3 mb-3 text-center">
+            <img src="assets/images/products/wildflower-honey.jpg" alt="Honey Jar" class="img-fluid rounded-3" id="detail-main-img" style="max-height: 480px; object-fit: contain;">
+          </div>
+          <!-- Thumbnail row -->
+          <div class="row g-2">
+            <div class="col-3">
+              <img src="assets/images/products/wildflower-honey.jpg" class="img-thumbnail rounded-3 cursor-pointer" onclick="document.getElementById('detail-main-img').src=this.src" alt="Thumbnail 1">
+            </div>
+            <div class="col-3">
+              <img src="assets/images/products/raw-comb-honey.jpg" class="img-thumbnail rounded-3 cursor-pointer" onclick="document.getElementById('detail-main-img').src=this.src" alt="Thumbnail 2">
+            </div>
+            <div class="col-3">
+              <img src="assets/images/sourcing/honey-harvest.jpg" class="img-thumbnail rounded-3 cursor-pointer" onclick="document.getElementById('detail-main-img').src=this.src" alt="Thumbnail 3">
+            </div>
+            <div class="col-3">
+              <img src="assets/images/sourcing/beehive.jpg" class="img-thumbnail rounded-3 cursor-pointer" onclick="document.getElementById('detail-main-img').src=this.src" alt="Thumbnail 4">
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Purchase Controls -->
+        <div class="col-lg-6">
+          <span class="badge badge-honey mb-2" id="detail-badge">Bestseller</span>
+          <h1 class="font-serif mb-2" id="detail-name">Wild Alpine Meadow Honey</h1>
+          
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="product-rating mb-0">
+              <i class="fas fa-star"></i>
+              <span class="fw-bold" id="detail-rating">4.9</span>
+              <span class="text-muted" id="detail-reviews">(128 reviews)</span>
+            </div>
+            <span class="text-muted">&bull;</span>
+            <span class="text-success small fw-bold"><i class="fas fa-check-circle me-1"></i> In Stock (85 jars left)</span>
+          </div>
+
+          <!-- Price Display -->
+          <div class="d-flex align-items-baseline gap-3 mb-4">
+            <div class="display-6 font-serif fw-bold text-amber" id="detail-price">$24.50</div>
+            <div class="fs-5 text-muted text-decoration-line-through" id="detail-compare-price">$29.00</div>
+          </div>
+
+          <p class="text-muted mb-4" id="detail-desc">
+            Harvested from pristine alpine meadows blooming with wild thyme, dandelion, and white clover. Our Wild Alpine Meadow Honey is 100% unpasteurized, cold-spun, and unfiltered to preserve delicate bio-enzymes, flavonoids, and pollen grains.
+          </p>
+
+          <!-- Floral Tasting Notes -->
+          <div class="mb-4">
+            <label class="form-label small fw-bold text-uppercase text-muted">Tasting Profile Notes</label>
+            <div class="d-flex flex-wrap gap-2" id="detail-notes">
+              <span class="tasting-tag py-1 px-3 fs-6">Floral</span>
+              <span class="tasting-tag py-1 px-3 fs-6">Chamomile</span>
+              <span class="tasting-tag py-1 px-3 fs-6">Mild Citrus</span>
+              <span class="tasting-tag py-1 px-3 fs-6">Vanilla Undertone</span>
+            </div>
+          </div>
+
+          <!-- Jar Size Selector -->
+          <div class="mb-4">
+            <label class="form-label small fw-bold text-uppercase text-muted">Select Jar Weight / Size</label>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-secondary btn-sm size-select-btn" data-size="250g">250g Jar</button>
+              <button class="btn btn-honey btn-sm size-select-btn active" data-size="500g">500g Artisan Jar</button>
+              <button class="btn btn-outline-secondary btn-sm size-select-btn" data-size="1kg">1kg Family Pantry</button>
+            </div>
+          </div>
+
+          <!-- Add to Cart & Wishlist Actions -->
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <!-- Quantity Counter -->
+            <div class="input-group" style="width: 130px;">
+              <button class="btn btn-outline-secondary" type="button" id="qty-minus-btn">-</button>
+              <input type="text" class="form-control text-center fw-bold" id="product-detail-qty" value="1">
+              <button class="btn btn-outline-secondary" type="button" id="qty-plus-btn">+</button>
+            </div>
+
+            <!-- Add Button -->
+            <button class="btn btn-honey flex-grow-1" id="btn-add-to-cart">
+              <i class="fas fa-shopping-basket me-2"></i> Add to Honey Basket
+            </button>
+
+            <!-- Wishlist Button -->
+            <button class="btn btn-outline-secondary" id="btn-toggle-wishlist" title="Save to Favorites">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Key Guarantees -->
+          <div class="p-3 bg-surface-alt rounded-4 border">
+            <div class="row g-2 text-center small">
+              <div class="col-4 border-end">
+                <i class="fas fa-temperature-low text-amber mb-1"></i>
+                <div>Cold Extracted</div>
+              </div>
+              <div class="col-4 border-end">
+                <i class="fas fa-shield-alt text-success mb-1"></i>
+                <div>100% Purity Certified</div>
+              </div>
+              <div class="col-4">
+                <i class="fas fa-shipping-fast text-amber mb-1"></i>
+                <div>Cold-Pack Ship</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- In-Depth Information Tabs -->
+      <div class="mt-5 pt-4 border-top">
+        <ul class="nav nav-tabs nav-fill mb-4" id="productDetailTabs" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active fw-bold" data-bs-toggle="tab" data-bs-target="#tab-specs">Floral Origin &amp; Terroir</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link fw-bold" data-bs-toggle="tab" data-bs-target="#tab-nutrition">Nutritional Facts &amp; Enzymes</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link fw-bold" data-bs-toggle="tab" data-bs-target="#tab-lab">Lab Purity Certificate</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link fw-bold" data-bs-toggle="tab" data-bs-target="#tab-reviews">Customer Reviews (128)</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="productDetailTabsContent">
+          <!-- Tab 1: Specs & Origin -->
+          <div class="tab-pane fade show active p-3 bg-surface-alt rounded-4 border" id="tab-specs">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <h5 class="font-serif">Origin &amp; Botanical Sourcing</h5>
+                <p class="text-muted small">
+                  The Julian Alps of Slovenia offer isolated high-altitude meadows fed by melting limestone snowpack. The bees forage uninhibited on wild sub-alpine flora, generating a light amber nectar with unmatched enzymatic vitality.
+                </p>
+                <ul class="list-unstyled small d-flex flex-column gap-2">
+                  <li><strong>Geographic Sanctuary:</strong> Julian Alps, Slovenia (1,200m Elevation)</li>
+                  <li><strong>Harvest Season:</strong> Late Spring / Early Summer</li>
+                  <li><strong>Predominant Forage:</strong> Wild Thyme, Mountain Clover, Alpine Dandelion</li>
+                  <li><strong>Color Grade (Pfund scale):</strong> 34mm (Light Amber)</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5 class="font-serif">Artisanal Pairing Recommendations</h5>
+                <p class="text-muted small">
+                  Due to its balanced, delicate floral finish with zero bitter aftertaste, this harvest pairs magnificently with aged goat cheeses, warm artisan sourdough, mild green teas, or drizzled over fresh honeycomb ice cream.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Nutrition & Enzymes -->
+          <div class="tab-pane fade p-3 bg-surface-alt rounded-4 border" id="tab-nutrition">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-5">
+                <div class="card border p-4 bg-surface shadow-sm rounded-4">
+                  <h5 class="border-bottom pb-2 font-serif">Nutrition Facts</h5>
+                  <div class="small text-muted mb-3">Serving Size: 1 tbsp (21g) &bull; Servings Per 500g Jar: ~24</div>
+                  <div class="d-flex justify-content-between py-1 border-bottom fw-bold">
+                    <span>Calories</span>
+                    <span>64</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom small">
+                    <span>Total Fat (0g)</span>
+                    <span>0%</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom small">
+                    <span>Sodium (1mg)</span>
+                    <span>0%</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom small">
+                    <span>Total Carbohydrates (17g)</span>
+                    <span>6%</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom ps-3 small">
+                    <span>Natural Fructose &amp; Glucose</span>
+                    <span>16g</span>
+                  </div>
+                  <div class="d-flex justify-content-between py-1 border-bottom small">
+                    <span>Protein (0.1g)</span>
+                    <span>0%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <h5 class="font-serif">Live Bio-Enzyme Activity</h5>
+                <p class="text-muted small">
+                  Unlike commercial processed syrups, raw unheated honey is biochemically active. Key enzymes preserved in this jar:
+                </p>
+                <ul class="small text-muted d-flex flex-column gap-2">
+                  <li><strong>Diastase (Amylase):</strong> Converts starches into natural simple sugars. Retained at high 28 Schade units.</li>
+                  <li><strong>Invertase:</strong> Facilitates digestion of complex sugars into bioavailable energy.</li>
+                  <li><strong>Glucose Oxidase:</strong> Produces natural trace hydrogen peroxide for organic antibacterial action.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Lab Certificate -->
+          <div class="tab-pane fade p-4 bg-surface-alt rounded-4 border" id="tab-lab">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>
+                <h5 class="font-serif mb-1"><i class="fas fa-file-contract text-amber me-2"></i>Batch Spectrometry Analysis Certificate</h5>
+                <span class="text-muted small">Independent Laboratory Test #AO-LAB-89412 &bull; Intertek Food Services</span>
+              </div>
+              <span class="badge bg-success-subtle text-success fw-bold px-3 py-2 fs-6">100% PASS</span>
+            </div>
+            
+            <div class="table-responsive">
+              <table class="table table-bordered bg-surface mb-0">
+                <thead class="table-light">
+                  <tr class="small">
+                    <th>Parameter Tested</th>
+                    <th>Lab Result</th>
+                    <th>EU / USDA Standard</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody class="small">
+                  <tr>
+                    <td><strong>Moisture Content</strong></td>
+                    <td>16.4%</td>
+                    <td>Max 20.0%</td>
+                    <td><span class="badge bg-success">Optimal (< 17.5%)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Diastase Activity</strong></td>
+                    <td>28.4 DN</td>
+                    <td>Min 8 DN</td>
+                    <td><span class="badge bg-success">Exceptional (> 20 DN)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>HMF (Hydroxymethylfurfural)</strong></td>
+                    <td>3.2 mg/kg</td>
+                    <td>Max 40 mg/kg</td>
+                    <td><span class="badge bg-success">Unheated (Fresh)</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>C4 Sugar Adulteration (Corn/Cane)</strong></td>
+                    <td>0.0% (Negative)</td>
+                    <td>0.0%</td>
+                    <td><span class="badge bg-success">Pure Nectar</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 4: Reviews -->
+          <div class="tab-pane fade p-4 bg-surface-alt rounded-4 border" id="tab-reviews">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <h5 class="font-serif mb-3">Customer Feedback</h5>
+                <div class="card p-3 mb-3 bg-surface border rounded-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="fw-bold">Eleanor Vance</span>
+                    <span class="text-warning small"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </div>
+                  <p class="small text-muted mb-0">"The texture is silky and luxurious. Subtle floral notes without the cloying synthetic sweetness of grocery store honey."</p>
+                </div>
+                <div class="card p-3 bg-surface border rounded-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <span class="fw-bold">Liam Sterling</span>
+                    <span class="text-warning small"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                  </div>
+                  <p class="small text-muted mb-0">"My morning oatmeal has been elevated completely. Fast shipping and the cold-pack packaging was pristine."</p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="font-serif mb-3">Write a Tasting Review</h5>
+                <form onsubmit="event.preventDefault(); FormsHelper.showToast('Thank you for your review! It will appear after apiary verification.', 'success'); this.reset();">
+                  <div class="mb-2">
+                    <label class="form-label small fw-bold">Your Rating</label>
+                    <div class="text-warning fs-5">
+                      <i class="fas fa-star cursor-pointer"></i>
+                      <i class="fas fa-star cursor-pointer"></i>
+                      <i class="fas fa-star cursor-pointer"></i>
+                      <i class="fas fa-star cursor-pointer"></i>
+                      <i class="fas fa-star cursor-pointer"></i>
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label small fw-bold">Review Title</label>
+                    <input type="text" class="form-control form-control-sm" required placeholder="e.g. Sublime chamomile taste">
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label small fw-bold">Your Review</label>
+                    <textarea class="form-control form-control-sm" rows="3" required placeholder="Describe the aroma, texture, and flavor..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-honey btn-sm">Submit Review</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="40" class="mb-3">
+      <p class="small text-muted mb-3">Pure Single-Origin Raw Honey &bull; Artisanal Extraction &bull; Ethical Beekeeping</p>
+      <div class="small text-muted">&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="mb-0 font-serif"><i class="fas fa-shopping-basket text-amber me-2"></i>Your Honey Basket</h5>
+      <button class="btn-close cart-drawer-close"></button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items"></div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fw-bold text-amber" id="cart-drawer-subtotal">$0.00</span>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="cart.html" class="btn btn-honey-outline">View Full Cart</a>
+        <a href="checkout.html" class="btn btn-honey">Proceed to Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Product Details script to load by ?id= -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      await ProductCatalog.init();
+      const params = new URLSearchParams(window.location.search);
+      const prodId = params.get('id') || 'prod-1';
+      const item = ProductCatalog.getById(prodId) || ProductCatalog.getAll()[0];
+
+      if (item) {
+        document.getElementById('breadcrumb-product-name').textContent = item.name;
+        document.getElementById('detail-name').textContent = item.name;
+        document.getElementById('detail-price').textContent = `$${item.price.toFixed(2)}`;
+        if (item.comparePrice) {
+          document.getElementById('detail-compare-price').textContent = `$${item.comparePrice.toFixed(2)}`;
+        } else {
+          document.getElementById('detail-compare-price').style.display = 'none';
+        }
+        document.getElementById('detail-desc').textContent = item.description;
+        document.getElementById('detail-rating').textContent = item.rating;
+        document.getElementById('detail-reviews').textContent = `(${item.reviewCount || 95} reviews)`;
+        document.getElementById('detail-badge').textContent = item.badge || item.categoryName;
+        document.getElementById('detail-main-img').src = item.image;
+
+        // Tasting notes
+        const notesContainer = document.getElementById('detail-notes');
+        if (notesContainer && item.tastingNotes) {
+          notesContainer.innerHTML = item.tastingNotes.map(n => `<span class="tasting-tag py-1 px-3 fs-6">${n}</span>`).join('');
+        }
+
+        // Add to cart bind
+        const addBtn = document.getElementById('btn-add-to-cart');
+        if (addBtn) {
+          addBtn.addEventListener('click', () => {
+            const qty = parseInt(document.getElementById('product-detail-qty').value) || 1;
+            const activeSizeBtn = document.querySelector('.size-select-btn.active');
+            const size = activeSizeBtn ? activeSizeBtn.getAttribute('data-size') : '500g';
+            CartController.addItem(item, qty, size);
+          });
+        }
+
+        // Wishlist bind
+        const wishBtn = document.getElementById('btn-toggle-wishlist');
+        if (wishBtn) {
+          wishBtn.setAttribute('data-wishlist-id', item.id);
+          wishBtn.addEventListener('click', () => {
+            WishlistController.toggle(item.id);
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

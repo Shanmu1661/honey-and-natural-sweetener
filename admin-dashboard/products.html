@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Inventory & Honey Stock - Amber & Oak Admin</title>
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <div class="admin-layout">
+    <!-- Admin Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="admin-sidebar-header">
+        <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none text-white">
+          <img src="../assets/images/logo/logo.svg" alt="Amber & Oak" height="34">
+          <span class="badge bg-warning text-dark small px-2">ADMIN</span>
+        </a>
+      </div>
+
+      <ul class="admin-nav">
+        <li class="admin-nav-item"><a href="index.html"><i class="fas fa-chart-line"></i> <span>Dashboard</span></a></li>
+        <li class="admin-nav-item active"><a href="products.html"><i class="fas fa-jar"></i> <span>Products &amp; Stock</span></a></li>
+        <li class="admin-nav-item"><a href="orders.html"><i class="fas fa-shopping-bag"></i> <span>Orders Fulfillment</span></a></li>
+        <li class="admin-nav-item"><a href="customers.html"><i class="fas fa-users"></i> <span>Customer Base</span></a></li>
+        <li class="admin-nav-item"><a href="categories.html"><i class="fas fa-th-list"></i> <span>Honey Varieties</span></a></li>
+        <li class="admin-nav-item"><a href="settings.html"><i class="fas fa-cog"></i> <span>Store Settings</span></a></li>
+        <li class="admin-nav-item mt-auto pt-3 border-top border-secondary"><a href="../index.html" class="text-warning"><i class="fas fa-external-link-alt"></i> <span>Live Storefront</span></a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <button class="btn btn-sm btn-outline-secondary d-lg-none" id="admin-sidebar-toggle"><i class="fas fa-bars"></i></button>
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-sm btn-outline-secondary theme-toggle-btn"><i class="fas fa-moon"></i></button>
+          <button class="btn btn-sm btn-outline-secondary rtl-toggle-btn"><span class="dir-text">RTL</span></button>
+        </div>
+      </header>
+
+      <div class="admin-content-body">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center mb-4 gap-2">
+          <div>
+            <h3 class="mb-1 font-serif">Product Catalog &amp; Inventory</h3>
+            <p class="text-muted small mb-0">Manage raw honey varieties, natural plant syrups, batch inventory, and pricing.</p>
+          </div>
+          <button class="btn btn-honey btn-sm" data-bs-toggle="modal" data-bs-target="#addProductModal">
+            <i class="fas fa-plus me-1"></i> Add New Product
+          </button>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="card border rounded-3 p-3 mb-4 bg-surface">
+          <div class="row g-2 align-items-center">
+            <div class="col-md-5">
+              <div class="input-group input-group-sm">
+                <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                <input type="text" class="form-control" id="admin-product-search" placeholder="Search product name, origin, or SKU...">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select form-select-sm" id="admin-category-filter">
+                <option value="all">All Varieties (Wildflower, Forest, Organic, Comb, Syrups)</option>
+                <option value="wildflower">Wildflower Honey</option>
+                <option value="forest">Forest Honey</option>
+                <option value="organic">Organic Honey</option>
+                <option value="comb">Raw Honeycomb</option>
+                <option value="sweeteners">Natural Sweeteners</option>
+              </select>
+            </div>
+            <div class="col-md-3 text-md-end">
+              <span class="text-muted small">Showing <strong>8 active SKUs</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products Table -->
+        <div class="admin-card">
+          <div class="table-responsive">
+            <table class="admin-table" id="admin-products-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Category</th>
+                  <th>Origin</th>
+                  <th>Price</th>
+                  <th>Stock Available</th>
+                  <th>Status</th>
+                  <th class="text-end">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/images/products/wildflower-honey.jpg" alt="Alpine Honey" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
+                      <div>
+                        <div class="fw-bold">Wild Alpine Meadow Honey</div>
+                        <small class="text-muted">SKU: HNY-ALP-01 &bull; 250g, 500g, 1kg</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-honey">Wildflower</span></td>
+                  <td>Slovenia</td>
+                  <td class="fw-bold text-amber">$24.50</td>
+                  <td>85 jars</td>
+                  <td><span class="status-pill delivered">In Stock</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-1" title="Edit Product"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" title="Delete" onclick="if(confirm('Delete this product?')) this.closest('tr').remove();"><i class="fas fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/images/products/forest-honey.jpg" alt="Forest Honey" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
+                      <div>
+                        <div class="fw-bold">Black Forest Honeydew Honey</div>
+                        <small class="text-muted">SKU: HNY-FRT-02 &bull; 250g, 500g, 1kg</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-dark text-white">Forest Honey</span></td>
+                  <td>Germany</td>
+                  <td class="fw-bold text-amber">$28.00</td>
+                  <td>42 jars</td>
+                  <td><span class="status-pill delivered">In Stock</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" onclick="if(confirm('Delete this product?')) this.closest('tr').remove();"><i class="fas fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/images/products/organic-honey.jpg" alt="Himalayan Honey" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
+                      <div>
+                        <div class="fw-bold">Himalayan Organic Raw Honey</div>
+                        <small class="text-muted">SKU: HNY-HIM-03 &bull; 250g, 500g, 1kg</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge badge-forest">Organic</span></td>
+                  <td>Himalayas</td>
+                  <td class="fw-bold text-amber">$32.00</td>
+                  <td>60 jars</td>
+                  <td><span class="status-pill delivered">In Stock</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" onclick="if(confirm('Delete this product?')) this.closest('tr').remove();"><i class="fas fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/images/products/raw-comb-honey.jpg" alt="Raw Honeycomb" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
+                      <div>
+                        <div class="fw-bold">Artisan Raw Honeycomb Slab</div>
+                        <small class="text-muted">SKU: HNY-CMB-04 &bull; 350g, 700g</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-warning text-dark">Raw Comb</span></td>
+                  <td>France</td>
+                  <td class="fw-bold text-amber">$36.50</td>
+                  <td><span class="text-danger fw-bold">28 slabs</span></td>
+                  <td><span class="status-pill processing">Low Stock</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" onclick="if(confirm('Delete this product?')) this.closest('tr').remove();"><i class="fas fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/images/products/date-syrup.jpg" alt="Date Nectar" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
+                      <div>
+                        <div class="fw-bold">Pure Artisan Date Nectar</div>
+                        <small class="text-muted">SKU: SWT-DTE-06 &bull; 350ml, 750ml</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-info text-dark">Sweetener</span></td>
+                  <td>Jordan</td>
+                  <td class="fw-bold text-amber">$19.50</td>
+                  <td>72 bottles</td>
+                  <td><span class="status-pill delivered">In Stock</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" onclick="if(confirm('Delete this product?')) this.closest('tr').remove();"><i class="fas fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/images/products/maple-syrup.jpg" alt="Maple Syrup" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
+                      <div>
+                        <div class="fw-bold">Organic Canadian Maple Syrup</div>
+                        <small class="text-muted">SKU: SWT-MPL-08 &bull; 250ml, 500ml</small>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-info text-dark">Sweetener</span></td>
+                  <td>Canada</td>
+                  <td class="fw-bold text-amber">$27.50</td>
+                  <td>48 jugs</td>
+                  <td><span class="status-pill delivered">In Stock</span></td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-edit"></i></button>
+                    <button class="btn btn-sm btn-outline-danger" onclick="if(confirm('Delete this product?')) this.closest('tr').remove();"><i class="fas fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Product Modal -->
+  <div class="modal fade" id="addProductModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title font-serif">Add New Honey / Sweetener Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form onsubmit="event.preventDefault(); alert('Product successfully added to inventory!'); bootstrap.Modal.getInstance(document.getElementById('addProductModal')).hide();">
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-md-8">
+                <label class="form-label small fw-bold">Product Name</label>
+                <input type="text" class="form-control" required placeholder="e.g. Tasmanian Leatherwood Raw Honey">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label small fw-bold">Variety / Category</label>
+                <select class="form-select" required>
+                  <option>Wildflower Honey</option>
+                  <option>Forest Honey</option>
+                  <option>Organic Honey</option>
+                  <option>Raw Honeycomb</option>
+                  <option>Natural Sweeteners</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label small fw-bold">Price ($ USD)</label>
+                <input type="number" step="0.50" class="form-control" required placeholder="26.00">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label small fw-bold">Compare Price ($)</label>
+                <input type="number" step="0.50" class="form-control" placeholder="30.00">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label small fw-bold">Initial Stock Count</label>
+                <input type="number" class="form-control" required placeholder="50">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold">Harvest Origin</label>
+                <input type="text" class="form-control" required placeholder="e.g. Tasmania, Australia">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold">Harvest Season</label>
+                <input type="text" class="form-control" placeholder="Summer Harvest">
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold">Product Description</label>
+                <textarea class="form-control" rows="3" placeholder="Tasting notes, bio-enzyme details, and flora description..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-honey btn-sm">Save &amp; Publish</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Product filter script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('admin-product-search');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase();
+          document.querySelectorAll('#admin-products-table tbody tr').forEach(row => {
+            row.style.display = row.textContent.toLowerCase().includes(q) ? '' : 'none';
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

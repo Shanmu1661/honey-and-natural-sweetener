@@ -1,0 +1,105 @@
+/* ==========================================================================
+   AMBER & OAK - RTL STYLESHEET (rtl.css)
+   Full Right-to-Left Layout Support for Arabic and Hebrew
+   ========================================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* Flipped Margins & Paddings */
+[dir="rtl"] .ms-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .me-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+[dir="rtl"] .me-1, [dir="rtl"] .me-2, [dir="rtl"] .me-3, [dir="rtl"] .me-4 {
+  margin-left: inherit;
+  margin-right: 0;
+}
+
+[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+/* Product Card RTL adjustments */
+[dir="rtl"] .product-badge-flag {
+  left: auto;
+  right: 15px;
+}
+
+[dir="rtl"] .product-wishlist-toggle {
+  right: auto;
+  left: 15px;
+}
+
+[dir="rtl"] .process-step-num {
+  right: auto;
+  left: 15px;
+}
+
+[dir="rtl"] .hero-floating-card {
+  left: auto;
+  right: -25px;
+}
+
+/* Cart Drawer RTL (slides from left) */
+[dir="rtl"] .cart-drawer {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+[dir="rtl"] .cart-drawer.open {
+  transform: translateX(0);
+}
+
+/* Toast Notification RTL */
+[dir="rtl"] .toast-container-custom {
+  right: auto;
+  left: 25px;
+}
+
+[dir="rtl"] .honey-toast {
+  border-left: none;
+  border-right: 5px solid var(--honey-500);
+}
+
+/* Dashboard Sidebar RTL */
+[dir="rtl"] .dashboard-sidebar {
+  border-right: none;
+  border-left: 1px solid var(--surface-border);
+}
+
+[dir="rtl"] .nav-badge-count {
+  right: auto;
+  left: -4px;
+}
+
+/* Flip Icons */
+[dir="rtl"] .fa-arrow-right::before {
+  content: "\f060"; /* FontAwesome fa-arrow-left */
+}
+
+[dir="rtl"] .fa-chevron-right::before {
+  content: "\f053"; /* FontAwesome fa-chevron-left */
+}
+
+[dir="rtl"] .fa-arrow-left::before {
+  content: "\f061"; /* FontAwesome fa-arrow-right */
+}

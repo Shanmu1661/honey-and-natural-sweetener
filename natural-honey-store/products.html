@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Varieties &amp; Natural Sweeteners — Amber &amp; Oak Catalog</title>
+  
+  <meta name="description" content="Browse single-origin raw honeys by variety: Wildflower, Forest Honeydew, Organic Acacia, Raw Honeycomb slabs, and unrefined natural plant sweeteners.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <!-- Top Notice Bar -->
+  <div class="top-notice-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="fas fa-shipping-fast text-warning me-1"></i> Complimentary temperature-controlled cold packing on all honey orders</div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="admin-dashboard/index.html" class="text-warning text-decoration-none small"><i class="fas fa-lock me-1"></i> Admin</a>
+        <a href="user-dashboard/index.html" class="text-warning text-decoration-none small"><i class="fas fa-user me-1"></i> My Account</a>
+        <button class="btn btn-sm btn-outline-warning py-0 px-2 theme-toggle-btn"><i class="fas fa-moon"></i></button>
+        <button class="btn btn-sm btn-outline-warning py-0 px-2 rtl-toggle-btn"><span class="dir-text">RTL</span></button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="navbar-brand-logo text-decoration-none">
+        <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="46">
+      </a>
+      <nav class="d-none d-lg-flex align-items-center gap-1">
+        <a class="nav-link-custom" href="index.html">Home</a>
+        <a class="nav-link-custom" href="about.html">Our Story</a>
+        <a class="nav-link-custom active" href="products.html">Honey Varieties</a>
+        <a class="nav-link-custom" href="health-benefits.html">Health Benefits</a>
+        <a class="nav-link-custom" href="bulk-gifting.html">Bulk &amp; Gifting</a>
+        <a class="nav-link-custom" href="services.html">Services</a>
+        <a class="nav-link-custom" href="blog.html">Journal</a>
+        <a class="nav-link-custom" href="contact.html">Contact</a>
+      </nav>
+      <div class="d-flex align-items-center gap-2">
+        <a href="user-dashboard/wishlist.html" class="nav-icon-btn" title="Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="nav-badge-count wishlist-count-badge" style="display:none;">0</span>
+        </a>
+        <button class="nav-icon-btn cart-drawer-trigger" title="Cart">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="nav-badge-count cart-count-badge" style="display:none;">0</span>
+        </button>
+        <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb & Header -->
+  <section class="py-4 bg-surface-alt border-bottom">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2 small">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Honey Varieties Catalog</li>
+        </ol>
+      </nav>
+      <h2 class="font-serif mb-1">Single-Origin Harvests &amp; Sweeteners</h2>
+      <p class="text-muted small mb-0">Unpasteurized, cold-centrifuged honeys categorized by floral and regional botanical origin.</p>
+    </div>
+  </section>
+
+  <!-- Catalog Section with Sidebar Filters -->
+  <main class="py-5 bg-surface">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Filter Sidebar -->
+        <aside class="col-lg-3">
+          <div class="card border rounded-4 p-4 bg-surface-alt product-filter-sidebar shadow-sm">
+            <h5 class="font-serif mb-3">Filter Varieties</h5>
+
+            <!-- Variety Category -->
+            <div class="mb-4">
+              <label class="form-label small fw-bold text-uppercase text-muted">Variety Category</label>
+              <div class="d-flex flex-column gap-1">
+                <button class="btn btn-sm text-start py-1 px-2 rounded active" data-product-filter="all">
+                  <i class="fas fa-check-circle text-amber me-1"></i> All Varieties
+                </button>
+                <button class="btn btn-sm text-start py-1 px-2 rounded" data-product-filter="wildflower">
+                  Wildflower Honey
+                </button>
+                <button class="btn btn-sm text-start py-1 px-2 rounded" data-product-filter="forest">
+                  Forest Honeydew
+                </button>
+                <button class="btn btn-sm text-start py-1 px-2 rounded" data-product-filter="organic">
+                  Certified Organic
+                </button>
+                <button class="btn btn-sm text-start py-1 px-2 rounded" data-product-filter="comb">
+                  Raw Honeycomb
+                </button>
+                <button class="btn btn-sm text-start py-1 px-2 rounded" data-product-filter="sweeteners">
+                  Natural Plant Sweeteners
+                </button>
+              </div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="mb-4 pt-3 border-top">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <label class="form-label small fw-bold text-uppercase text-muted mb-0">Max Price</label>
+                <span class="fw-bold text-amber" id="price-range-value">$40</span>
+              </div>
+              <input type="range" class="form-range" min="15" max="40" step="1" value="40" id="price-range-slider">
+              <div class="d-flex justify-content-between text-muted small">
+                <span>$15</span>
+                <span>$40</span>
+              </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="mb-4 pt-3 border-top">
+              <label class="form-label small fw-bold text-uppercase text-muted">Certifications</label>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="checkbox" id="cert-raw" checked>
+                <label class="form-check-label small" for="cert-raw">100% Raw &amp; Unheated</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="checkbox" id="cert-organic">
+                <label class="form-check-label small" for="cert-organic">USDA Organic</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="checkbox" id="cert-comb">
+                <label class="form-check-label small" for="cert-comb">Virgin Beeswax Comb</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="cert-vegan">
+                <label class="form-check-label small" for="cert-vegan">Plant-Based / Vegan</label>
+              </div>
+            </div>
+
+            <!-- Need Help Box -->
+            <div class="p-3 bg-honey-cream rounded-3 border mt-3 text-center">
+              <i class="fas fa-question-circle text-amber fa-2x mb-2"></i>
+              <h6 class="font-serif mb-1">Need a Recommendation?</h6>
+              <p class="small text-muted mb-2">Read our tasting guide or chat with our honey sommelier.</p>
+              <a href="contact.html" class="btn btn-honey-outline btn-sm w-100">Ask a Beekeeper</a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid Area -->
+        <section class="col-lg-9">
+          <!-- Filter Controls Bar -->
+          <div class="card border rounded-4 p-3 mb-4 bg-surface-alt shadow-sm">
+            <div class="row g-2 align-items-center">
+              <!-- Search -->
+              <div class="col-md-6">
+                <div class="input-group input-group-sm">
+                  <span class="input-group-text bg-transparent"><i class="fas fa-search text-muted"></i></span>
+                  <input type="text" class="form-control" id="product-search-input" placeholder="Search by name, tasting notes, flora origin...">
+                </div>
+              </div>
+
+              <!-- Sorting -->
+              <div class="col-md-6 d-flex align-items-center justify-content-md-end gap-2">
+                <span class="text-muted small text-nowrap">Sort by:</span>
+                <select class="form-select form-select-sm" id="product-sort-select" style="max-width: 200px;">
+                  <option value="featured">Featured Harvests</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Highest Customer Rating</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="row" id="all-products-grid">
+            <!-- Populated reactively by js/products.js -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="40" class="mb-3">
+      <p class="small text-muted mb-3">Pure Single-Origin Raw Honey &bull; Artisanal Extraction &bull; Ethical Beekeeping</p>
+      <div class="small text-muted">&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="mb-0 font-serif"><i class="fas fa-shopping-basket text-amber me-2"></i>Your Honey Basket</h5>
+      <button class="btn-close cart-drawer-close"></button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items"></div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fw-bold text-amber" id="cart-drawer-subtotal">$0.00</span>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="cart.html" class="btn btn-honey-outline">View Full Cart</a>
+        <a href="checkout.html" class="btn btn-honey">Proceed to Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

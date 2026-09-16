@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Dashboard - Amber & Oak Artisanal Honey</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/logo.svg">
+  
+  <!-- Google Fonts & Font Awesome 6 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Store Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <!-- Top Notice Bar -->
+  <div class="top-notice-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div><i class="fas fa-crown text-warning me-2"></i><strong>Gold Forager Member</strong> — You have <strong>480 Honey Rewards Points</strong></div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="../products.html" class="text-warning text-decoration-none small"><i class="fas fa-arrow-left me-1"></i> Return to Store</a>
+        <button class="btn btn-sm btn-outline-warning py-0 px-2 theme-toggle-btn" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+        <button class="btn btn-sm btn-outline-warning py-0 px-2 rtl-toggle-btn" title="Toggle RTL"><span class="dir-text">RTL</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="navbar-brand-logo text-decoration-none">
+        <img src="../assets/images/logo/logo.svg" alt="Amber & Oak Logo" height="42">
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <a href="../cart.html" class="nav-icon-btn cart-drawer-trigger" title="Cart">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="nav-badge-count cart-count-badge">2</span>
+        </a>
+        <a href="../index.html" class="btn btn-honey-outline btn-sm">
+          <i class="fas fa-sign-out-alt me-1"></i> Logout
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dashboard Container -->
+  <main class="dashboard-wrapper">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sidebar Navigation -->
+        <aside class="col-lg-3">
+          <div class="dashboard-sidebar-card">
+            <div class="user-profile-summary">
+              <div class="user-avatar-wrap">
+                <img src="../assets/images/testimonials/customer-1.jpg" alt="Eleanor Vance" class="user-avatar-img">
+                <span class="user-badge-level" title="Gold Member"><i class="fas fa-crown"></i></span>
+              </div>
+              <h5 class="mb-1">Eleanor Vance</h5>
+              <p class="text-muted small mb-2">eleanor.vance@example.com</p>
+              <span class="badge badge-honey">Gold Forager</span>
+            </div>
+
+            <ul class="dashboard-nav-list">
+              <li>
+                <a href="index.html" class="dashboard-nav-link active">
+                  <i class="fas fa-th-large"></i> Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="orders.html" class="dashboard-nav-link">
+                  <i class="fas fa-box-open"></i> My Orders
+                  <span class="badge bg-warning text-dark ms-auto">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="wishlist.html" class="dashboard-nav-link">
+                  <i class="fas fa-heart"></i> Saved Favorites
+                  <span class="badge bg-light text-dark ms-auto wishlist-count-badge">2</span>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html" class="dashboard-nav-link">
+                  <i class="fas fa-user-circle"></i> Personal Profile
+                </a>
+              </li>
+              <li>
+                <a href="addresses.html" class="dashboard-nav-link">
+                  <i class="fas fa-map-marked-alt"></i> Address Book
+                </a>
+              </li>
+              <li>
+                <a href="settings.html" class="dashboard-nav-link">
+                  <i class="fas fa-sliders-h"></i> Preferences
+                </a>
+              </li>
+              <li class="pt-3 border-top mt-2">
+                <a href="../index.html" class="dashboard-nav-link text-danger">
+                  <i class="fas fa-power-off"></i> Log Out
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Main Dashboard View -->
+        <section class="col-lg-9">
+          <!-- Welcome Banner -->
+          <div class="card border-0 rounded-4 p-4 mb-4" style="background: linear-gradient(135deg, var(--honey-100) 0%, var(--honey-50) 100%);">
+            <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+              <div>
+                <h3 class="mb-1 font-serif">Welcome back, Eleanor!</h3>
+                <p class="text-muted mb-0">Your seasonal autumn harvest allocation is ready. You have <strong>480 reward nectar points</strong>.</p>
+              </div>
+              <a href="../products.html" class="btn btn-honey btn-sm align-self-start align-self-md-center">
+                <i class="fas fa-jar me-1"></i> Order Honey
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6 col-md-3">
+              <div class="stat-metric-card">
+                <div class="stat-metric-icon"><i class="fas fa-box"></i></div>
+                <div>
+                  <div class="stat-metric-value">6</div>
+                  <div class="stat-metric-label">Total Orders</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="stat-metric-card">
+                <div class="stat-metric-icon"><i class="fas fa-coins"></i></div>
+                <div>
+                  <div class="stat-metric-value">480</div>
+                  <div class="stat-metric-label">Reward Points</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="stat-metric-card">
+                <div class="stat-metric-icon"><i class="fas fa-heart"></i></div>
+                <div>
+                  <div class="stat-metric-value wishlist-count-badge">2</div>
+                  <div class="stat-metric-label">Favorited Jars</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="stat-metric-card">
+                <div class="stat-metric-icon"><i class="fas fa-truck-loading"></i></div>
+                <div>
+                  <div class="stat-metric-value text-success">1</div>
+                  <div class="stat-metric-label">In Transit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Order Tracking Banner -->
+          <div class="card border rounded-4 p-4 mb-4 bg-surface shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h5 class="mb-0 font-serif"><i class="fas fa-truck text-amber me-2"></i>Active Order #ORD-2026-9014</h5>
+              <span class="badge bg-primary-subtle text-primary fw-bold">In Transit</span>
+            </div>
+            <p class="text-muted small mb-3">Estimated Delivery: <strong>Tomorrow by 3:00 PM</strong> (Tracking: <code>UPS-1Z9999999999999999</code>)</p>
+            
+            <div class="order-tracking-steps">
+              <div class="order-step completed">
+                <div class="order-step-bullet"><i class="fas fa-check"></i></div>
+                <div class="order-step-title">Harvested</div>
+              </div>
+              <div class="order-step completed">
+                <div class="order-step-bullet"><i class="fas fa-check"></i></div>
+                <div class="order-step-title">Bottled &amp; Sealed</div>
+              </div>
+              <div class="order-step active">
+                <div class="order-step-bullet"><i class="fas fa-shipping-fast"></i></div>
+                <div class="order-step-title">In Transit</div>
+              </div>
+              <div class="order-step">
+                <div class="order-step-bullet"><i class="fas fa-home"></i></div>
+                <div class="order-step-title">Delivered</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 pt-3 border-top">
+              <img src="../assets/images/products/forest-honey.jpg" alt="Black Forest Honeydew Honey" class="rounded" style="width: 50px; height: 50px; object-fit: cover;">
+              <div class="flex-grow-1">
+                <div class="fw-bold">Black Forest Honeydew Honey (500g) + 1 other item</div>
+                <div class="text-muted small">Shipped to: 742 Evergreen Botanical Way, Portland, OR</div>
+              </div>
+              <a href="orders.html" class="btn btn-honey-outline btn-sm">Track Package</a>
+            </div>
+          </div>
+
+          <!-- Recent Orders Table -->
+          <div class="card border rounded-4 p-4 bg-surface shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h5 class="mb-0 font-serif">Recent Orders</h5>
+              <a href="orders.html" class="text-amber small fw-bold">View All Orders &rarr;</a>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-middle">
+                <thead>
+                  <tr class="text-muted small">
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fw-bold">#ORD-2026-9014</td>
+                    <td>Sep 2, 2026</td>
+                    <td>2 Honey Jars</td>
+                    <td class="fw-bold text-amber">$60.00</td>
+                    <td><span class="badge bg-info-subtle text-info">In Transit</span></td>
+                    <td><a href="orders.html" class="btn btn-sm btn-outline-secondary">Details</a></td>
+                  </tr>
+                  <tr>
+                    <td class="fw-bold">#ORD-2026-8941</td>
+                    <td>Aug 28, 2026</td>
+                    <td>Alpine Honey + Comb</td>
+                    <td class="fw-bold text-amber">$92.50</td>
+                    <td><span class="badge bg-success-subtle text-success">Delivered</span></td>
+                    <td><a href="orders.html" class="btn btn-sm btn-outline-secondary">Invoice</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Slide-over Mini-Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="mb-0 font-serif"><i class="fas fa-shopping-basket text-amber me-2"></i>Your Honey Basket</h5>
+      <button class="btn-close cart-drawer-close" aria-label="Close"></button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items"></div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fw-bold text-amber" id="cart-drawer-subtotal">$0.00</span>
+      </div>
+      <p class="small text-muted mb-3">Taxes and shipping calculated at checkout.</p>
+      <div class="d-grid gap-2">
+        <a href="../cart.html" class="btn btn-honey-outline">View Full Cart</a>
+        <a href="../checkout.html" class="btn btn-honey">Proceed to Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Bootstrap 5.3.3 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Scripts -->
+  <script src="../js/storage.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/wishlist.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
