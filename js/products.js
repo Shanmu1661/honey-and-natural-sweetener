@@ -173,6 +173,27 @@ const ProductCatalog = {
       tastingNotes: ["Toasted pecan", "Woodsmoke", "Vanilla"],
       description: "Wood-fired artisanal maple syrup containing 54 active antioxidants and pure tree goodness.",
       sizes: ["250ml", "500ml", "1 Liter"]
+    },
+    {
+      id: "prod-9",
+      name: "Bourbon Barrel-Aged Maple Syrup",
+      category: "sweeteners",
+      categoryName: "Natural Sweetener",
+      tagline: "Aged in charred American oak casks for rich smoky caramel notes",
+      price: 34.00,
+      comparePrice: 39.50,
+      rating: 5.0,
+      reviewCount: 92,
+      inStock: true,
+      stockQuantity: 36,
+      badge: "Small Batch",
+      image: "assets/images/products/barrel-maple-syrup.jpg",
+      origin: "Vermont, USA",
+      harvestSeason: "Spring Harvest / Aged 6 Mo",
+      colorGrade: "Mahogany Amber",
+      tastingNotes: ["Bourbon oak", "Toasted caramel", "Vanilla"],
+      description: "Pure Grade A maple syrup rested for six months inside charred bourbon casks. Non-alcoholic, with deep butterscotch and vanilla warmth.",
+      sizes: ["355ml Flask", "750ml Bottle"]
     }
   ],
 

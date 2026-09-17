@@ -3,11 +3,39 @@
    Mobile-first responsive adaptations and layout refinements
    ========================================================================== */
 
+/* Medium-Large screens & Scaled Laptops (992px to 1250px) */
+@media (min-width: 992px) and (max-width: 1250px) {
+  .site-navbar .navbar-brand-logo {
+    margin-right: 0.6rem;
+  }
+  .site-navbar .navbar-brand-logo img {
+    height: 36px;
+  }
+  .site-navbar .nav-link-custom {
+    font-size: 0.84rem;
+    padding: 0.35rem 0.45rem !important;
+    white-space: nowrap !important;
+  }
+  .site-navbar nav {
+    gap: 0.15rem !important;
+  }
+  .navbar-actions-wrap {
+    margin-left: 0.4rem;
+    gap: 0.35rem;
+  }
+}
+
 /* Extra Small to Medium screens (< 992px) */
 @media (max-width: 991.98px) {
-  .hero-artisan {
+  .hero-artisan,
+  .hero-commercial {
     padding: 3.5rem 0 3rem;
     text-align: center;
+  }
+
+  .page-hero-banner {
+    padding: 3.5rem 0 2.75rem;
+    text-align: left;
   }
 
   .hero-main-img {

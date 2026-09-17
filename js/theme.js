@@ -33,6 +33,15 @@
       }
     });
 
+    // Update any standalone logo images (e.g. footer)
+    document.querySelectorAll('.site-footer img, .site-navbar img:not(.brand-logo-light):not(.brand-logo-dark)').forEach(img => {
+      if (img.src.includes('logo')) {
+        img.src = theme === 'dark'
+          ? img.src.replace('logo.svg', 'logo-dark.svg')
+          : img.src.replace('logo-dark.svg', 'logo.svg');
+      }
+    });
+
     if (window.StorageManager) {
       window.StorageManager.emit('theme:changed', { theme });
     }

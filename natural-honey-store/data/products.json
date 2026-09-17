@@ -246,5 +246,36 @@
       "protein": "0.0g",
       "enzymes": "Contains Quebécenol Antioxidant"
     }
+  },
+  {
+    "id": "prod-9",
+    "name": "Bourbon Barrel-Aged Maple Syrup",
+    "category": "sweeteners",
+    "categoryName": "Natural Sweetener",
+    "tagline": "Pure Grade A maple syrup rested in charred American oak bourbon barrels",
+    "price": 34.00,
+    "comparePrice": 39.50,
+    "rating": 5.0,
+    "reviewCount": 92,
+    "inStock": true,
+    "stockQuantity": 36,
+    "badge": "Small Batch",
+    "image": "assets/images/products/barrel-maple-syrup.jpg",
+    "origin": "Green Mountains, Vermont, USA",
+    "harvestSeason": "Spring Harvest / Aged 6 Months",
+    "colorGrade": "Mahogany Amber",
+    "moistureContent": "33.5%",
+    "tastingNotes": ["Bourbon oak", "Toasted caramel", "Vanilla bean", "Butterscotch"],
+    "description": "Artisanal small-batch maple syrup aged for six months inside authentic charred oak barrels. The wood imparts notes of vanilla, toasted oak, and warm butterscotch without alcohol. Supreme over waffles, roasted pecans, and artisan cocktails.",
+    "sizes": ["355ml Flask", "750ml Bottle"],
+    "certifications": ["100% Pure Maple", "Oak Barrel Aged", "Non-Alcoholic"],
+    "nutrition": {
+      "servingSize": "1 tbsp (20ml)",
+      "calories": 54,
+      "totalCarbs": "13.8g",
+      "sugars": "12.4g",
+      "protein": "0.0g",
+      "enzymes": "Polyphenols & Lignans from Charred Oak"
+    }
   }
 ]

@@ -21,59 +21,127 @@
 <body>
 
   <!-- Top Notice Bar -->
-  <div class="top-notice-bar">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div><i class="fas fa-certificate text-warning me-1"></i> Lab Certified: 100% Unheated with Live Diastase Enzymes</div>
-      <div class="d-flex align-items-center gap-3">
-        <a href="admin-dashboard/index.html" class="text-warning text-decoration-none small"><i class="fas fa-lock me-1"></i> Admin</a>
-        <a href="user-dashboard/index.html" class="text-warning text-decoration-none small"><i class="fas fa-user me-1"></i> My Account</a>
-        <button class="btn btn-sm btn-outline-warning py-0 px-2 theme-toggle-btn"><i class="fas fa-moon"></i></button>
-        <button class="btn btn-sm btn-outline-warning py-0 px-2 rtl-toggle-btn"><span class="dir-text">RTL</span></button>
-      </div>
-    </div>
-  </div>
 
-  <!-- Navbar -->
+  <!-- Main Navigation Bar -->
   <header class="site-navbar">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="container-fluid px-3 px-xl-4 px-xxl-5 d-flex align-items-center justify-content-between">
+      <!-- Brand Logo -->
       <a href="index.html" class="navbar-brand-logo text-decoration-none">
-        <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="46">
+        <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak Honey Logo" class="brand-logo-light" height="42">
+        <img src="assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak Honey Logo" class="brand-logo-dark" height="42">
       </a>
+
+      <!-- Desktop Nav Items -->
       <nav class="d-none d-lg-flex align-items-center gap-1">
-        <a class="nav-link-custom" href="index.html">Home</a>
-        <a class="nav-link-custom" href="about.html">Our Story</a>
+        <div class="dropdown">
+          <a class="nav-link-custom  dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item " href="index.html">Home 1 — Raw Honey Store &amp; Sourcing</a></li>
+            <li><a class="dropdown-item " href="home-2.html">Home 2 — B2B Apiculture &amp; Services</a></li>
+          </ul>
+        </div>
+        <a class="nav-link-custom " href="about.html">Our Story</a>
         <a class="nav-link-custom active" href="products.html">Honey Varieties</a>
-        <a class="nav-link-custom" href="health-benefits.html">Health Benefits</a>
-        <a class="nav-link-custom" href="bulk-gifting.html">Bulk &amp; Gifting</a>
-        <a class="nav-link-custom" href="services.html">Services</a>
-        <a class="nav-link-custom" href="blog.html">Journal</a>
-        <a class="nav-link-custom" href="contact.html">Contact</a>
+        <a class="nav-link-custom " href="health-benefits.html">Health Benefits</a>
+        <a class="nav-link-custom " href="bulk-gifting.html">Bulk &amp; Gifting</a>
+        
+        <div class="dropdown">
+          <a class="nav-link-custom  dropdown-toggle" href="#" data-bs-toggle="dropdown">Services &amp; More</a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item " href="services.html">All Apiary Services</a></li>
+            <li><a class="dropdown-item " href="service-details.html">Apiary Tours &amp; Bottling</a></li>
+            <li><a class="dropdown-item " href="pricing.html">Pantry &amp; Wholesale Pricing</a></li>
+            <li><a class="dropdown-item" href="login.html">Sign In / Register</a></li>
+            <li><a class="dropdown-item " href="coming-soon.html">Coming Soon Page</a></li>
+            <li><a class="dropdown-item " href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link-custom " href="blog.html">Journal</a>
+        <a class="nav-link-custom " href="contact.html">Contact</a>
       </nav>
-      <div class="d-flex align-items-center gap-2">
-        <a href="user-dashboard/wishlist.html" class="nav-icon-btn" title="Wishlist">
+      <!-- Action Buttons & Utilities -->
+      <div class="navbar-actions-wrap">
+        <!-- Customer Account Dropdown -->
+        <div class="dropdown">
+          <button class="nav-icon-btn" type="button" id="userAccountDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="My Account">
+            <i class="fas fa-user"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="userAccountDropdown" style="min-width: 190px;">
+            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2 text-warning"></i>Login / Register</a></li>
+            <li><a class="dropdown-item" href="user-dashboard/index.html"><i class="fas fa-user-circle me-2 text-warning"></i>My Account</a></li>
+            <li><a class="dropdown-item" href="user-dashboard/orders.html"><i class="fas fa-box-open me-2 text-warning"></i>My Orders</a></li>
+          </ul>
+        </div>
+
+        <!-- Wishlist -->
+        <a href="user-dashboard/wishlist.html" class="nav-icon-btn" title="View Wishlist">
           <i class="far fa-heart"></i>
           <span class="nav-badge-count wishlist-count-badge" style="display:none;">0</span>
         </a>
-        <button class="nav-icon-btn cart-drawer-trigger" title="Cart">
+
+        <!-- Cart Trigger -->
+        <button class="nav-icon-btn cart-drawer-trigger" title="Open Cart">
           <i class="fas fa-shopping-basket"></i>
           <span class="nav-badge-count cart-count-badge" style="display:none;">0</span>
         </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- RTL Layout Toggle -->
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
+          <span class="dir-text">RTL</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="collapse d-lg-none" id="mobileNavMenu">
+      <div class="container py-3">
+        <ul class="nav flex-column gap-2">
+          <li class="nav-item"><a class="nav-link-custom " href="index.html">Home 1 (Raw Honey Sourcing)</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="home-2.html">Home 2 (B2B &amp; Services)</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="about.html">Our Story &amp; Apiary</a></li>
+          <li class="nav-item"><a class="nav-link-custom active" href="products.html">Honey Varieties Catalog</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="health-benefits.html">Health &amp; Medicinal Benefits</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="bulk-gifting.html">Corporate &amp; Wedding Gifting</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="services.html">Apiculture Services</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="blog.html">Journal &amp; Recipes</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="contact.html">Contact Us</a></li>
+          <li class="nav-item border-top pt-2"><a class="nav-link-custom text-warning" href="login.html"><i class="fas fa-sign-in-alt me-1"></i> Login / Register</a></li>
+          <li class="nav-item"><a class="nav-link-custom text-warning" href="user-dashboard/index.html"><i class="fas fa-user me-1"></i> My Account</a></li>
+        </ul>
       </div>
     </div>
   </header>
 
-  <!-- Product Details Section -->
-  <main class="py-5 bg-surface">
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
     <div class="container">
-      <!-- Breadcrumb -->
-      <nav aria-label="breadcrumb" class="mb-4">
+      <nav aria-label="breadcrumb">
         <ol class="breadcrumb small">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item"><a href="products.html">Honey Varieties</a></li>
           <li class="breadcrumb-item active" id="breadcrumb-product-name">Wild Alpine Meadow Honey</li>
         </ol>
       </nav>
+      <span class="badge badge-honey mb-2"><i class="fas fa-certificate me-1"></i> Single-Origin Reserve</span>
+      <h1 class="hero-title">Artisan Harvest Profile</h1>
+      <p class="hero-desc">Direct apiary extraction details, diastase lab verification, and floral pollen profile.</p>
+    </div>
+  </section>
 
+  <!-- Product Details Section -->
+  <main class="py-5 bg-surface">
+    <div class="container">
       <div class="row g-5">
         <!-- Product Image Gallery -->
         <div class="col-lg-6">
@@ -374,12 +442,88 @@
     </div>
   </main>
 
+    <!-- Newsletter Signup -->
+  <section class="py-5 text-center" style="background: radial-gradient(circle at center, var(--honey-100) 0%, var(--honey-50) 100%);">
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <i class="fas fa-paper-plane fa-2x text-amber mb-3"></i>
+          <h3 class="font-serif">Join The Apiary Circle</h3>
+          <p class="text-muted small mb-4">Receive notification of limited single-origin batch releases and receive a 10% coupon on your first order.</p>
+          <form class="newsletter-subscribe-form d-flex gap-2 justify-content-center">
+            <input type="email" class="form-control" placeholder="Enter your email address..." required style="max-width: 320px;">
+            <button type="submit" class="btn btn-honey text-nowrap">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container text-center">
-      <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="40" class="mb-3">
-      <p class="small text-muted mb-3">Pure Single-Origin Raw Honey &bull; Artisanal Extraction &bull; Ethical Beekeeping</p>
-      <div class="small text-muted">&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved.</div>
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-4 footer-col">
+          <div class="mb-3">
+            <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" height="42">
+          </div>
+          <p class="small">
+            Generational master beekeepers dedicated to sustainable apiculture, non-thermal extraction, and single-origin raw honeys and plant syrups.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Varieties -->
+        <div class="col-6 col-lg-2 footer-col">
+          <h5>Honey Varieties</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="products.html">Wild Alpine Meadow</a></li>
+            <li><a href="products.html">Black Forest Honeydew</a></li>
+            <li><a href="products.html">Himalayan Organic</a></li>
+            <li><a href="products.html">Virgin Honeycomb Slabs</a></li>
+            <li><a href="products.html">Medjool Date Nectar</a></li>
+            <li><a href="products.html">Canadian Maple Syrup</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Useful Links -->
+        <div class="col-6 col-lg-2 footer-col">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="about.html">About Our Apiary</a></li>
+            <li><a href="health-benefits.html">Health Benefits</a></li>
+            <li><a href="bulk-gifting.html">Corporate Gifting</a></li>
+            <li><a href="services.html">Apiary Services</a></li>
+            <li><a href="pricing.html">Pantry Pricing</a></li>
+            <li><a href="contact.html">Contact &amp; Farm Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div class="col-lg-4 footer-col">
+          <h5>Apiary Sanctuary</h5>
+          <p class="small mb-2"><i class="fas fa-map-marker-alt text-warning me-2"></i> 480 Honeycomb Ridge Road, Cascade Foothills, OR 97009</p>
+          <p class="small mb-2"><i class="fas fa-phone-alt text-warning me-2"></i> Helpline: +1 (800) 482-HONEY</p>
+          <p class="small mb-3"><i class="fas fa-envelope text-warning me-2"></i> care@amberandoakhoney.com</p>
+          <div class="p-2 bg-dark rounded small text-warning border border-secondary">
+            <i class="fas fa-shield-alt me-1"></i> Certified USDA Organic &bull; 100% Raw Standard
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved. Multipurpose Theme.</div>
+        <div class="d-flex gap-3">
+          <a href="login.html">Login / Register</a>
+          <a href="user-dashboard/index.html">User Portal</a>
+        </div>
+      </div>
     </div>
   </footer>
 
