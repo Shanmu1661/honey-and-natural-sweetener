@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/style.css?v=2.2">
+  <link rel="stylesheet" href="../css/responsive.css?v=2.3">
+  <link rel="stylesheet" href="../css/dashboard.css?v=2.3">
   <link rel="stylesheet" href="../css/rtl.css" id="rtl-stylesheet" disabled>
 </head>
 <body>
@@ -23,11 +23,9 @@
   <header class="site-navbar p-0">
     <div class="top-notice-bar">
       <div class="container d-flex justify-content-between align-items-center">
-        <div><i class="fas fa-crown text-warning me-2"></i>Gold Forager Member — 480 Points</div>
-        <div class="d-flex align-items-center gap-3">
-          <a href="../products.html" class="text-warning text-decoration-none small"><i class="fas fa-arrow-left me-1"></i> Return to Store</a>
-          <button class="btn btn-sm btn-outline-warning py-0 px-2 theme-toggle-btn"><i class="fas fa-moon"></i></button>
-          <button class="btn btn-sm btn-outline-warning py-0 px-2 rtl-toggle-btn"><span class="dir-text">RTL</span></button>
+        <div><i class="fas fa-crown text-warning me-2"></i><strong>Gold Forager Member</strong> — You have <strong>480 Honey Rewards Points</strong></div>
+        <div class="d-flex align-items-center gap-2">
+          <a href="../products.html" class="text-warning text-decoration-none small me-1"><i class="fas fa-arrow-left me-1"></i> Return to Store</a>
         </div>
       </div>
     </div>
@@ -36,11 +34,24 @@
         <img src="../assets/images/logo/logo.svg" alt="Amber &amp; Oak" class="brand-logo-light" height="42">
         <img src="../assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak" class="brand-logo-dark" height="42">
       </a>
-      <div class="d-flex align-items-center gap-3">
+      <div class="navbar-actions-wrap d-flex align-items-center gap-2">
+        <!-- Primary Header CTA -->
+        <a href="../products.html" class="btn btn-honey btn-header-cta" title="Shop Honey Varieties">
+          <i class="fas fa-jar"></i><span>Shop Honey</span>
+        </a>
         <a href="../cart.html" class="nav-icon-btn cart-drawer-trigger" title="Cart">
           <i class="fas fa-shopping-basket"></i>
           <span class="nav-badge-count cart-count-badge">2</span>
         </a>
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <!-- RTL Layout Toggle -->
+        <button class="btn btn-sm rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
+          <i class="fas fa-right-left fa-exchange-alt rtl-icon"></i>
+          <span class="dir-text">RTL</span>
+        </button>
       </div>
     </div>
   </header>
@@ -53,7 +64,7 @@
           <div class="dashboard-sidebar-card">
             <div class="user-profile-summary">
               <div class="user-avatar-wrap">
-                <img src="../assets/images/testimonials/customer-1.jpg" alt="Eleanor Vance" class="user-avatar-img">
+                <img src="../assets/images/testimonials/customer-1.jpg" alt="Eleanor Vance" class="user-avatar-img" style="object-position: center 20%;">
                 <span class="user-badge-level"><i class="fas fa-crown"></i></span>
               </div>
               <h5 class="mb-1">Eleanor Vance</h5>
@@ -68,7 +79,7 @@
               <li><a href="profile.html" class="dashboard-nav-link"><i class="fas fa-user-circle"></i> Personal Profile</a></li>
               <li><a href="addresses.html" class="dashboard-nav-link"><i class="fas fa-map-marked-alt"></i> Address Book</a></li>
               <li><a href="settings.html" class="dashboard-nav-link"><i class="fas fa-sliders-h"></i> Preferences</a></li>
-              <li class="pt-3 border-top mt-2"><a href="../index.html" class="dashboard-nav-link text-danger"><i class="fas fa-power-off"></i> Log Out</a></li>
+              <li class="pt-3 border-top mt-2"><a href="../products.html" class="dashboard-nav-link text-amber fw-bold"><i class="fas fa-jar"></i> Continue Shopping</a></li>
             </ul>
           </div>
         </aside>
@@ -99,16 +110,16 @@
 
             <!-- Items list in order -->
             <div class="py-3">
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <img src="../assets/images/products/forest-honey.jpg" alt="Black Forest Honeydew Honey" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+              <div class="dashboard-order-row d-flex align-items-center gap-3 mb-3">
+                <img src="../assets/images/products/forest-honey.jpg" alt="Black Forest Honeydew Honey" class="dashboard-order-img rounded">
                 <div class="flex-grow-1">
                   <h6 class="mb-0">Black Forest Honeydew Honey</h6>
                   <span class="text-muted small">Size: 500g &bull; Qty: 1 &bull; $28.00</span>
                 </div>
                 <a href="../product-details.html?id=prod-2" class="btn btn-sm btn-outline-secondary">View Jar</a>
               </div>
-              <div class="d-flex align-items-center gap-3">
-                <img src="../assets/images/products/organic-honey.jpg" alt="Himalayan Organic Raw Honey" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+              <div class="dashboard-order-row d-flex align-items-center gap-3">
+                <img src="../assets/images/products/organic-honey.jpg" alt="Himalayan Organic Raw Honey" class="dashboard-order-img rounded">
                 <div class="flex-grow-1">
                   <h6 class="mb-0">Himalayan Organic Raw Honey</h6>
                   <span class="text-muted small">Size: 250g &bull; Qty: 1 &bull; $32.00</span>
@@ -167,15 +178,15 @@
             </div>
 
             <div class="py-3">
-              <div class="d-flex align-items-center gap-3 mb-3">
-                <img src="../assets/images/products/wildflower-honey.jpg" alt="Wild Alpine Meadow Honey" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+              <div class="dashboard-order-row d-flex align-items-center gap-3 mb-3">
+                <img src="../assets/images/products/wildflower-honey.jpg" alt="Wild Alpine Meadow Honey" class="dashboard-order-img rounded">
                 <div class="flex-grow-1">
                   <h6 class="mb-0">Wild Alpine Meadow Honey (2x)</h6>
                   <span class="text-muted small">Size: 500g &bull; Qty: 2 &bull; $49.00</span>
                 </div>
               </div>
-              <div class="d-flex align-items-center gap-3">
-                <img src="../assets/images/products/raw-comb-honey.jpg" alt="Artisan Raw Honeycomb Slab" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+              <div class="dashboard-order-row d-flex align-items-center gap-3">
+                <img src="../assets/images/products/raw-comb-honey.jpg" alt="Artisan Raw Honeycomb Slab" class="dashboard-order-img rounded">
                 <div class="flex-grow-1">
                   <h6 class="mb-0">Artisan Raw Honeycomb Slab (1x)</h6>
                   <span class="text-muted small">Size: 350g Slab &bull; Qty: 1 &bull; $36.50</span>

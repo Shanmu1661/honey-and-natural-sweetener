@@ -85,7 +85,9 @@ The **Amber & Oak** Natural Honey & Natural Sweetener Store template has been bu
 - All JSON mock datasets verified: `products.json` (9 SKUs), `users.json` (2 profiles), `orders.json` (4 orders).
 - All 18 storefront HTML pages verified with zero missing assets or broken relative references.
 - Dropdown menus & sticky cards verified: navigation dropdowns float completely above sticky sidebar cards with proper z-index stacking hierarchy (`site-navbar: 1045`, `sticky cards: 1010`).
-- Top notification bar removed from header and utilities (`Login / Register`, `My Account`, `Admin`, Theme Toggle `[🌙]`, RTL `[RTL]`) integrated into `.site-navbar` with responsive alignment.
-- Header navigation removed on `login.html` alone with a clean "← Back to Store" navigation link.
-- Google and Apple social sign-in/sign-up buttons placed below the email/password Sign In button and form in `login.html`.
+- Header navbar updated with a prominent, brand-aligned primary CTA button (`Dashboard` with `fa-th-large` icon) linking directly to `user-dashboard/index.html` across all storefront pages and the mobile drawer.
+- Mobile navigation drawer enhanced with a full-width primary CTA button (`Dashboard`).
+- Responsive styling (`.btn-header-cta`) implemented in `style.css` and `responsive.css` to gracefully scale and adapt from 1600px desktop down to 360px mobile viewports.
+- Newsletter subscription section ("Join The Apiary Circle") retained exclusively on `contact.html` and removed from all other storefront pages as per requirement.
 - Vanilla JS zero-build setup confirmed: runs out-of-the-box locally via browser or web server.
+- Footer brand identity (logo image and copyright brand name) configured to redirect directly to the Home Page (`index.html`) across all storefront pages with interactive hover feedback.

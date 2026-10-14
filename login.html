@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Login &amp; Register — Amber &amp; Oak</title>
+  <title>Customer Login &amp; Register - Amber &amp; Oak</title>
   
   <meta name="description" content="Sign in to your customer portal or create an account to access member rewards, tracking, and harvest allocations.">
   <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
@@ -21,14 +21,23 @@
 <body class="d-flex flex-column min-vh-100 justify-content-between no-navbar-pad">
 
   <!-- Minimal Brand Header for Login Page -->
-  <div class="container pt-4 pb-2 d-flex justify-content-end align-items-center">
+  <div class="container pt-4 pb-2 d-flex justify-content-between align-items-center">
+    <a href="index.html" class="navbar-brand-logo text-decoration-none">
+      <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak" class="brand-logo-light" height="38">
+      <img src="assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak" class="brand-logo-dark" height="38">
+    </a>
     <div class="d-flex align-items-center gap-2">
+              <!-- Primary Header CTA -->
+        <a href="products.html" class="btn btn-honey btn-header-cta" title="Shop Honey Varieties">
+          <i class="fas fa-jar"></i><span>Shop Honey</span>
+        </a>
       <button class="btn btn-sm btn-outline-warning py-1 px-2 theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
         <i class="fas fa-moon"></i>
       </button>
-      <button class="btn btn-sm btn-outline-warning py-1 px-2 rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
-        <span class="dir-text">RTL</span>
-      </button>
+      <button class="btn btn-sm rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
+          <i class="fas fa-right-left fa-exchange-alt rtl-icon"></i>
+          <span class="dir-text">RTL</span>
+        </button>
     </div>
   </div>
 
@@ -42,8 +51,17 @@
                 <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak Honey Co." height="52" class="brand-logo-light mx-auto" style="height: 52px; width: auto; max-width: 240px; object-fit: contain;">
                 <img src="assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak Honey Co." height="52" class="brand-logo-dark mx-auto" style="height: 52px; width: auto; max-width: 240px; object-fit: contain;">
               </a>
-              <h4 class="font-serif mb-1">The Apiary Portal</h4>
-              <p class="text-muted small mb-0">Sign in to track deliveries and access exclusive batch releases.</p>
+            <div class="alert alert-warning border-0 rounded-3 mb-4 d-flex align-items-center gap-2">
+              <i class="fas fa-info-circle fa-lg text-amber"></i>
+              <div class="small">
+                <strong>Notice:</strong> Customer Login / Sign Up is not required per store specifications. All store orders support direct instant checkout without an account.
+              </div>
+            </div>
+
+            <div class="text-center mb-4">
+              <a href="products.html" class="btn btn-honey w-100 py-2">
+                <i class="fas fa-jar me-2"></i> Shop Honey Varieties
+              </a>
             </div>
 
             <!-- Login / Register Tabs -->
@@ -160,7 +178,7 @@
   <!-- Minimal Auth Footer -->
   <footer class="py-3 mt-auto text-center text-muted small border-top bg-surface">
     <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
-      <div>&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved.</div>
+      <div>&copy; 2026 <a href="index.html" class="footer-brand-name" title="Amber &amp; Oak">Amber &amp; Oak Honey Co.</a> All rights reserved.</div>
       <div class="d-flex gap-3">
         <a href="index.html" class="text-decoration-none text-muted">Store Home</a>
         <a href="contact.html" class="text-decoration-none text-muted">Help &amp; Support</a>

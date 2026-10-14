@@ -56,22 +56,22 @@
 /* Navbar Brand & Actions RTL */
 [dir="rtl"] .navbar-brand-logo {
   margin-right: 0 !important;
-  margin-left: 1.25rem !important;
+  margin-left: 0.5rem !important;
 }
 
 [dir="rtl"] .site-navbar nav {
   margin-right: auto !important;
-  margin-left: 1.25rem !important;
+  margin-left: 0.5rem !important;
 }
 
 [dir="rtl"] .navbar-actions-wrap {
   margin-left: 0 !important;
   margin-right: 0 !important;
-  padding-left: 0.25rem !important;
+  padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   [dir="rtl"] .navbar-actions-wrap {
     margin-right: auto !important;
     margin-left: 0 !important;

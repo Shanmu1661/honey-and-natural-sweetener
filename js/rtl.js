@@ -8,6 +8,14 @@
 
   function getStoredDirection() {
     try {
+      if (window.location.search) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlDir = urlParams.get('dir');
+        if (urlDir === 'rtl' || urlDir === 'ltr') {
+          localStorage.setItem(DIR_KEY, urlDir);
+          return urlDir;
+        }
+      }
       return localStorage.getItem(DIR_KEY) || 'ltr';
     } catch (e) {
       return 'ltr';
