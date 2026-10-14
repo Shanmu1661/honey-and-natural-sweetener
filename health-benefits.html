@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Benefits &amp; Science — Amber &amp; Oak Raw Honey</title>
+  
+  <meta name="description" content="Explore the medicinal properties of raw, unpasteurized honey. Live enzymes, antioxidants, prebiotic flora, and a clinical comparison between raw and processed honey.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <!-- Main Navigation Bar -->
+  <header class="site-navbar">
+    <div class="container-fluid px-3 px-xl-4 px-xxl-5 d-flex align-items-center justify-content-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="navbar-brand-logo text-decoration-none">
+        <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak Honey Logo" class="brand-logo-light" height="42">
+        <img src="assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak Honey Logo" class="brand-logo-dark" height="42">
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="d-none d-lg-flex align-items-center gap-1">
+        <div class="dropdown">
+          <a class="nav-link-custom  dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item " href="index.html">Home 1 — Raw Honey Store &amp; Sourcing</a></li>
+            <li><a class="dropdown-item " href="home-2.html">Home 2 — B2B Apiculture &amp; Services</a></li>
+          </ul>
+        </div>
+        <a class="nav-link-custom " href="about.html">Our Story</a>
+        <a class="nav-link-custom " href="products.html">Honey Varieties</a>
+        <a class="nav-link-custom active" href="health-benefits.html">Health Benefits</a>
+        <a class="nav-link-custom " href="bulk-gifting.html">Bulk &amp; Gifting</a>
+        
+        <div class="dropdown">
+          <a class="nav-link-custom  dropdown-toggle" href="#" data-bs-toggle="dropdown">Services &amp; More</a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item " href="services.html">All Apiary Services</a></li>
+            <li><a class="dropdown-item " href="service-details.html">Apiary Tours &amp; Bottling</a></li>
+            <li><a class="dropdown-item " href="pricing.html">Pantry &amp; Wholesale Pricing</a></li>
+            <li><a class="dropdown-item" href="login.html">Sign In / Register</a></li>
+            <li><a class="dropdown-item " href="coming-soon.html">Coming Soon Page</a></li>
+            <li><a class="dropdown-item " href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link-custom " href="blog.html">Journal</a>
+        <a class="nav-link-custom " href="contact.html">Contact</a>
+      </nav>
+      <!-- Action Buttons & Utilities -->
+      <div class="navbar-actions-wrap">
+        <!-- Customer Account Dropdown -->
+        <div class="dropdown">
+          <button class="nav-icon-btn" type="button" id="userAccountDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="My Account">
+            <i class="fas fa-user"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="userAccountDropdown" style="min-width: 190px;">
+            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2 text-warning"></i>Login / Register</a></li>
+            <li><a class="dropdown-item" href="user-dashboard/index.html"><i class="fas fa-user-circle me-2 text-warning"></i>My Account</a></li>
+            <li><a class="dropdown-item" href="user-dashboard/orders.html"><i class="fas fa-box-open me-2 text-warning"></i>My Orders</a></li>
+          </ul>
+        </div>
+
+        <!-- Wishlist -->
+        <a href="user-dashboard/wishlist.html" class="nav-icon-btn" title="View Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="nav-badge-count wishlist-count-badge" style="display:none;">0</span>
+        </a>
+
+        <!-- Cart Trigger -->
+        <button class="nav-icon-btn cart-drawer-trigger" title="Open Cart">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="nav-badge-count cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- RTL Layout Toggle -->
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
+          <span class="dir-text">RTL</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="collapse d-lg-none" id="mobileNavMenu">
+      <div class="container py-3">
+        <ul class="nav flex-column gap-2">
+          <li class="nav-item"><a class="nav-link-custom " href="index.html">Home 1 (Raw Honey Sourcing)</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="home-2.html">Home 2 (B2B &amp; Services)</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="about.html">Our Story &amp; Apiary</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="products.html">Honey Varieties Catalog</a></li>
+          <li class="nav-item"><a class="nav-link-custom active" href="health-benefits.html">Health &amp; Medicinal Benefits</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="bulk-gifting.html">Corporate &amp; Wedding Gifting</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="services.html">Apiculture Services</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="blog.html">Journal &amp; Recipes</a></li>
+          <li class="nav-item"><a class="nav-link-custom " href="contact.html">Contact Us</a></li>
+          <li class="nav-item border-top pt-2"><a class="nav-link-custom text-warning" href="login.html"><i class="fas fa-sign-in-alt me-1"></i> Login / Register</a></li>
+          <li class="nav-item"><a class="nav-link-custom text-warning" href="user-dashboard/index.html"><i class="fas fa-user me-1"></i> My Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner" style="background-image: url('assets/images/hero/hero-health.jpg');">
+    <div class="container">
+      <span class="badge badge-honey mb-2"><i class="fas fa-heartbeat me-1"></i> Apitherapy &amp; Biochemistry</span>
+      <h1 class="hero-title">The Living Medicine of Raw Honey</h1>
+      <p class="hero-desc">
+        For millennia, unheated raw honey has served as nature's most potent bioactive food. Uncover the cellular differences between real unheated honey and pasteurized supermarket syrups.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4 Core Pillars of Health -->
+  <section class="py-5 bg-surface">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="badge badge-honey mb-2">Cellular Vitality</span>
+        <h2 class="font-serif display-6">Four Pillars of Raw Honey Biochemistry</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Pillar 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-icon-card">
+            <div class="benefit-icon-wrap"><i class="fas fa-dna"></i></div>
+            <h5 class="font-serif">Active Bio-Enzymes</h5>
+            <p class="small text-muted mb-0">Contains intact diastase, invertase, and glucose oxidase which naturally generate organic antiseptic hydrogen peroxide without synthetic chemicals.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-icon-card">
+            <div class="benefit-icon-wrap"><i class="fas fa-shield-virus"></i></div>
+            <h5 class="font-serif">Polyphenol Shield</h5>
+            <p class="small text-muted mb-0">Packed with caffeic acid, pinocembrin, and chrysin flavonoids. Clinical studies indicate potent neutralization of systemic oxidative stress.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-icon-card">
+            <div class="benefit-icon-wrap"><i class="fas fa-bacteria"></i></div>
+            <h5 class="font-serif">Prebiotic Microbiome</h5>
+            <p class="small text-muted mb-0">Natural oligosaccharides nourish beneficial gut microbiota, selectively feeding <em>Bifidobacteria</em> and <em>Lactobacillus</em> for digestive balance.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="benefit-icon-card">
+            <div class="benefit-icon-wrap"><i class="fas fa-heartbeat"></i></div>
+            <h5 class="font-serif">Sustained Glycemic Burn</h5>
+            <p class="small text-muted mb-0">Fructose-glucose balance and unpasteurized organic acids provide an even glycogen release without the violent insulin spikes caused by refined sucrose.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bioactive Honey Spotlight Section -->
+  <section class="py-5 bg-surface-alt border-top border-bottom">
+    <div class="container py-3">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="assets/images/health/bioactive-honey.jpg" alt="Pure Bioactive Raw Honey with Pollen and Propolis" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 420px; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 m-3 p-3 rounded-3 bg-dark text-white shadow" style="--bs-bg-opacity: .88; backdrop-filter: blur(8px);">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fas fa-certificate text-warning fa-2x"></i>
+                <div>
+                  <div class="fw-bold small">Cold Spun &bull; Diastase > 24 DN</div>
+                  <div class="text-light small opacity-75">100% Intact Pollen &amp; Living Enzymes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="badge badge-honey mb-2">Living Bioactive Nutrition</span>
+          <h2 class="font-serif display-6">Why Living Enzymes &amp; Raw Comb Matter</h2>
+          <p class="text-muted mb-4">
+            Industrial commercial honey is routinely flash-pasteurized past 160&deg;F and pressured through dense filters to maintain eternal clarity on supermarket shelves. This thermal shock permanently denatures vital enzymes like invertase, diastase, and glucose oxidase.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-3 bg-surface rounded-3 border">
+                <div class="fw-bold text-amber mb-1"><i class="fas fa-check-circle me-1"></i> Intact Glucose Oxidase</div>
+                <small class="text-muted">Continuously releases physiological trace amounts of organic hydrogen peroxide for gentle cellular protection.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-surface rounded-3 border">
+                <div class="fw-bold text-amber mb-1"><i class="fas fa-check-circle me-1"></i> Bioactive Propolis Resin</div>
+                <small class="text-muted">Over 300 natural botanical polyphenols and bioflavonoids gathered by bees to protect hive health.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Definitive Comparison Table: Raw vs Processed Honey -->
+  <section class="py-5 bg-surface" id="comparison">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="badge badge-honey mb-2">The Pure Truth</span>
+        <h2 class="font-serif display-6">Raw Honey vs. Commercial Supermarket Honey</h2>
+        <p class="text-muted">Discover what heating and ultra-filtration remove from your jar.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="comparison-table-wrapper shadow-sm rounded-4">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th style="width: 30%;">Quality Dimension</th>
+                  <th style="width: 35%;" class="comparison-highlight text-amber">
+                    <i class="fas fa-check-circle me-1"></i> Amber &amp; Oak Raw Honey
+                  </th>
+                  <th style="width: 35%;">Commercial Processed Honey</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Thermal Treatment</strong></td>
+                  <td class="comparison-highlight text-success">
+                    <strong>Never heated above 95°F</strong> (hive warmth)
+                  </td>
+                  <td class="text-danger">Pasteurized up to 165°F to delay crystallization</td>
+                </tr>
+                <tr>
+                  <td><strong>Bee Pollen Content</strong></td>
+                  <td class="comparison-highlight text-success">
+                    <strong>100% Intact</strong> floral pollen grains present
+                  </td>
+                  <td class="text-danger">Ultra-filtered to strip geographical tracing</td>
+                </tr>
+                <tr>
+                  <td><strong>Enzymatic Activity (Diastase)</strong></td>
+                  <td class="comparison-highlight text-success">
+                    <strong>High &gt; 24 DN</strong> (clinically active)
+                  </td>
+                  <td class="text-danger">Destroyed or reduced to &lt; 4 DN by heat</td>
+                </tr>
+                <tr>
+                  <td><strong>HMF Degradation Marker</strong></td>
+                  <td class="comparison-highlight text-success">
+                    <strong>&lt; 5 mg/kg</strong> (super fresh nectar)
+                  </td>
+                  <td class="text-danger">Often exceeds 40–80 mg/kg due to boiling</td>
+                </tr>
+                <tr>
+                  <td><strong>Propolis &amp; Beeswax Traces</strong></td>
+                  <td class="comparison-highlight text-success">
+                    <strong>Naturally present</strong> bio-resin immunity
+                  </td>
+                  <td class="text-danger">Chemically stripped out</td>
+                </tr>
+                <tr>
+                  <td><strong>Glycemic Impact</strong></td>
+                  <td class="comparison-highlight text-success">
+                    <strong>Moderate to Low (GI 32–50)</strong>
+                  </td>
+                  <td class="text-danger">High (GI 65–75) often spiked with corn syrup</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Glycemic Index Guide -->
+  <section class="py-5 bg-surface">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <span class="badge badge-honey mb-2">Metabolic Wellness</span>
+        <h2 class="font-serif display-6">Glycemic Index (GI) Comparison</h2>
+        <p class="text-muted">A lower glycemic index means gradual glucose uptake and steady physical stamina.</p>
+      </div>
+
+      <div class="row g-3 justify-content-center">
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 bg-surface-alt rounded-4 border text-center">
+            <div class="display-6 font-serif fw-bold text-success mb-1">GI 32</div>
+            <div class="fw-bold">Raw Acacia Honey</div>
+            <small class="text-muted">Highest natural fructose ratio; minimal insulin demand.</small>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 bg-surface-alt rounded-4 border text-center">
+            <div class="display-6 font-serif fw-bold text-success mb-1">GI 48</div>
+            <div class="fw-bold">Wild Alpine Meadow</div>
+            <small class="text-muted">Balanced floral carbohydrates for athletic endurance.</small>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 bg-surface-alt rounded-4 border text-center">
+            <div class="display-6 font-serif fw-bold text-warning mb-1">GI 65</div>
+            <div class="fw-bold">Refined Table Sugar</div>
+            <small class="text-muted">Empty calories, void of micronutrients or enzymes.</small>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="p-3 bg-surface-alt rounded-4 border text-center">
+            <div class="display-6 font-serif fw-bold text-danger mb-1">GI 87</div>
+            <div class="fw-bold">High Fructose Corn Syrup</div>
+            <small class="text-muted">Ultra-processed industrial additive linked to inflammation.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-5">
+        <a href="products.html" class="btn btn-honey btn-lg">
+          <i class="fas fa-jar me-2"></i> Taste the Difference: Shop Raw Honey
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Newsletter Signup -->
+  <section class="py-5 text-center" style="background: radial-gradient(circle at center, var(--honey-100) 0%, var(--honey-50) 100%);">
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <i class="fas fa-paper-plane fa-2x text-amber mb-3"></i>
+          <h3 class="font-serif">Join The Apiary Circle</h3>
+          <p class="text-muted small mb-4">Receive notification of limited single-origin batch releases and receive a 10% coupon on your first order.</p>
+          <form class="newsletter-subscribe-form d-flex gap-2 justify-content-center">
+            <input type="email" class="form-control" placeholder="Enter your email address..." required style="max-width: 320px;">
+            <button type="submit" class="btn btn-honey text-nowrap">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand -->
+        <div class="col-lg-4 footer-col">
+          <div class="mb-3">
+            <img src="assets/images/logo/logo-footer.svg" alt="Amber &amp; Oak" height="42">
+          </div>
+          <p class="small">
+            Generational master beekeepers dedicated to sustainable apiculture, non-thermal extraction, and single-origin raw honeys and plant syrups.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Pinterest" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Varieties -->
+        <div class="col-6 col-lg-2 footer-col">
+          <h5>Honey Varieties</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="products.html">Wild Alpine Meadow</a></li>
+            <li><a href="products.html">Black Forest Honeydew</a></li>
+            <li><a href="products.html">Himalayan Organic</a></li>
+            <li><a href="products.html">Virgin Honeycomb Slabs</a></li>
+            <li><a href="products.html">Medjool Date Nectar</a></li>
+            <li><a href="products.html">Canadian Maple Syrup</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Useful Links -->
+        <div class="col-6 col-lg-2 footer-col">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="about.html">About Our Apiary</a></li>
+            <li><a href="health-benefits.html">Health Benefits</a></li>
+            <li><a href="bulk-gifting.html">Corporate Gifting</a></li>
+            <li><a href="services.html">Apiary Services</a></li>
+            <li><a href="pricing.html">Pantry Pricing</a></li>
+            <li><a href="contact.html">Contact &amp; Farm Visit</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact info -->
+        <div class="col-lg-4 footer-col">
+          <h5>Apiary Sanctuary</h5>
+          <p class="small mb-2"><i class="fas fa-map-marker-alt text-warning me-2"></i> 480 Honeycomb Ridge Road, Cascade Foothills, OR 97009</p>
+          <p class="small mb-2"><i class="fas fa-phone-alt text-warning me-2"></i> Helpline: +1 (800) 482-HONEY</p>
+          <p class="small mb-3"><i class="fas fa-envelope text-warning me-2"></i> care@amberandoakhoney.com</p>
+          <div class="p-2 bg-dark rounded small text-warning border border-secondary">
+            <i class="fas fa-shield-alt me-1"></i> Certified USDA Organic &bull; 100% Raw Standard
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved. Multipurpose Theme.</div>
+        <div class="d-flex gap-3">
+          <a href="login.html">Login / Register</a>
+          <a href="user-dashboard/index.html">User Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="mb-0 font-serif"><i class="fas fa-shopping-basket text-amber me-2"></i>Your Honey Basket</h5>
+      <button class="btn-close cart-drawer-close"></button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items"></div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fw-bold text-amber" id="cart-drawer-subtotal">$0.00</span>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="cart.html" class="btn btn-honey-outline">View Full Cart</a>
+        <a href="checkout.html" class="btn btn-honey">Proceed to Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

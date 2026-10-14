@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders - Amber & Oak Customer Portal</title>
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <!-- Fixed Header with Notice Bar and Navbar -->
+  <header class="site-navbar p-0">
+    <div class="top-notice-bar">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div><i class="fas fa-crown text-warning me-2"></i>Gold Forager Member — 480 Points</div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="../products.html" class="text-warning text-decoration-none small"><i class="fas fa-arrow-left me-1"></i> Return to Store</a>
+          <button class="btn btn-sm btn-outline-warning py-0 px-2 theme-toggle-btn"><i class="fas fa-moon"></i></button>
+          <button class="btn btn-sm btn-outline-warning py-0 px-2 rtl-toggle-btn"><span class="dir-text">RTL</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-3 px-xl-4 px-xxl-5 py-2 d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="navbar-brand-logo text-decoration-none">
+        <img src="../assets/images/logo/logo.svg" alt="Amber &amp; Oak" class="brand-logo-light" height="42">
+        <img src="../assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak" class="brand-logo-dark" height="42">
+      </a>
+      <div class="d-flex align-items-center gap-3">
+        <a href="../cart.html" class="nav-icon-btn cart-drawer-trigger" title="Cart">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="nav-badge-count cart-count-badge">2</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-wrapper">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Sidebar Navigation -->
+        <aside class="col-lg-3">
+          <div class="dashboard-sidebar-card">
+            <div class="user-profile-summary">
+              <div class="user-avatar-wrap">
+                <img src="../assets/images/testimonials/customer-1.jpg" alt="Eleanor Vance" class="user-avatar-img">
+                <span class="user-badge-level"><i class="fas fa-crown"></i></span>
+              </div>
+              <h5 class="mb-1">Eleanor Vance</h5>
+              <p class="text-muted small mb-2">eleanor.vance@example.com</p>
+              <span class="badge badge-honey">Gold Forager</span>
+            </div>
+
+            <ul class="dashboard-nav-list">
+              <li><a href="index.html" class="dashboard-nav-link"><i class="fas fa-th-large"></i> Dashboard</a></li>
+              <li><a href="orders.html" class="dashboard-nav-link active"><i class="fas fa-box-open"></i> My Orders <span class="badge bg-warning text-dark ms-auto">2</span></a></li>
+              <li><a href="wishlist.html" class="dashboard-nav-link"><i class="fas fa-heart"></i> Saved Favorites</a></li>
+              <li><a href="profile.html" class="dashboard-nav-link"><i class="fas fa-user-circle"></i> Personal Profile</a></li>
+              <li><a href="addresses.html" class="dashboard-nav-link"><i class="fas fa-map-marked-alt"></i> Address Book</a></li>
+              <li><a href="settings.html" class="dashboard-nav-link"><i class="fas fa-sliders-h"></i> Preferences</a></li>
+              <li class="pt-3 border-top mt-2"><a href="../index.html" class="dashboard-nav-link text-danger"><i class="fas fa-power-off"></i> Log Out</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Orders Content -->
+        <section class="col-lg-9">
+          <div class="d-flex flex-column flex-sm-row align-items-sm-center justify-content-between mb-4 gap-3">
+            <div>
+              <h3 class="mb-1 font-serif">Order History</h3>
+              <p class="text-muted mb-0">Track shipments, download invoices, and reorder your favorite raw honeys.</p>
+            </div>
+            <a href="../products.html" class="btn btn-honey btn-sm align-self-start"><i class="fas fa-plus me-1"></i> New Order</a>
+          </div>
+
+          <!-- Order Card 1 (In Transit) -->
+          <div class="card border rounded-4 p-4 mb-4 bg-surface shadow-sm">
+            <div class="d-flex flex-wrap justify-content-between align-items-center pb-3 border-bottom gap-2">
+              <div>
+                <span class="badge bg-info-subtle text-info fw-bold mb-1">In Transit</span>
+                <h5 class="mb-0 font-serif">Order #ORD-2026-9014</h5>
+                <span class="text-muted small">Placed on September 2, 2026</span>
+              </div>
+              <div class="text-sm-end">
+                <div class="text-muted small">Total Amount</div>
+                <div class="fw-bold fs-5 text-amber">$60.00</div>
+              </div>
+            </div>
+
+            <!-- Items list in order -->
+            <div class="py-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="../assets/images/products/forest-honey.jpg" alt="Black Forest Honeydew Honey" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                <div class="flex-grow-1">
+                  <h6 class="mb-0">Black Forest Honeydew Honey</h6>
+                  <span class="text-muted small">Size: 500g &bull; Qty: 1 &bull; $28.00</span>
+                </div>
+                <a href="../product-details.html?id=prod-2" class="btn btn-sm btn-outline-secondary">View Jar</a>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="../assets/images/products/organic-honey.jpg" alt="Himalayan Organic Raw Honey" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                <div class="flex-grow-1">
+                  <h6 class="mb-0">Himalayan Organic Raw Honey</h6>
+                  <span class="text-muted small">Size: 250g &bull; Qty: 1 &bull; $32.00</span>
+                </div>
+                <a href="../product-details.html?id=prod-3" class="btn btn-sm btn-outline-secondary">View Jar</a>
+              </div>
+            </div>
+
+            <!-- Stepper -->
+            <div class="order-tracking-steps my-3">
+              <div class="order-step completed">
+                <div class="order-step-bullet"><i class="fas fa-check"></i></div>
+                <div class="order-step-title">Order Received</div>
+              </div>
+              <div class="order-step completed">
+                <div class="order-step-bullet"><i class="fas fa-check"></i></div>
+                <div class="order-step-title">Cold Packed</div>
+              </div>
+              <div class="order-step active">
+                <div class="order-step-bullet"><i class="fas fa-truck"></i></div>
+                <div class="order-step-title">In Transit</div>
+              </div>
+              <div class="order-step">
+                <div class="order-step-bullet"><i class="fas fa-home"></i></div>
+                <div class="order-step-title">Delivered</div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 border-top gap-2">
+              <div class="small text-muted">
+                <i class="fas fa-barcode me-1"></i> Carrier: UPS Express (<code>UPS-1Z9999999999999999</code>)
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary" onclick="alert('Downloading simulated PDF Tax Invoice for #ORD-2026-9014...')">
+                  <i class="fas fa-file-invoice me-1"></i> Invoice PDF
+                </button>
+                <button class="btn btn-sm btn-honey" onclick="FormsHelper.showToast('Re-order items added to cart!', 'success'); CartController.addItem({id:'prod-2', name:'Black Forest Honey', price:28, image:'../assets/images/products/forest-honey.jpg'}, 1, '500g');">
+                  <i class="fas fa-redo me-1"></i> Reorder
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Card 2 (Delivered) -->
+          <div class="card border rounded-4 p-4 mb-4 bg-surface shadow-sm">
+            <div class="d-flex flex-wrap justify-content-between align-items-center pb-3 border-bottom gap-2">
+              <div>
+                <span class="badge bg-success-subtle text-success fw-bold mb-1">Delivered</span>
+                <h5 class="mb-0 font-serif">Order #ORD-2026-8941</h5>
+                <span class="text-muted small">Placed on August 28, 2026 &bull; Delivered Aug 31</span>
+              </div>
+              <div class="text-sm-end">
+                <div class="text-muted small">Total Amount</div>
+                <div class="fw-bold fs-5 text-amber">$92.50</div>
+              </div>
+            </div>
+
+            <div class="py-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="../assets/images/products/wildflower-honey.jpg" alt="Wild Alpine Meadow Honey" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                <div class="flex-grow-1">
+                  <h6 class="mb-0">Wild Alpine Meadow Honey (2x)</h6>
+                  <span class="text-muted small">Size: 500g &bull; Qty: 2 &bull; $49.00</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="../assets/images/products/raw-comb-honey.jpg" alt="Artisan Raw Honeycomb Slab" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                <div class="flex-grow-1">
+                  <h6 class="mb-0">Artisan Raw Honeycomb Slab (1x)</h6>
+                  <span class="text-muted small">Size: 350g Slab &bull; Qty: 1 &bull; $36.50</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 border-top gap-2">
+              <div class="small text-muted">
+                <i class="fas fa-check-circle text-success me-1"></i> Delivered safely to front porch
+              </div>
+              <div class="d-flex gap-2">
+                <button class="btn btn-sm btn-outline-secondary" onclick="alert('Downloading simulated PDF Tax Invoice for #ORD-2026-8941...')">
+                  <i class="fas fa-file-invoice me-1"></i> Invoice PDF
+                </button>
+                <button class="btn btn-sm btn-honey" onclick="FormsHelper.showToast('Re-order items added to cart!', 'success'); CartController.addItem({id:'prod-1', name:'Wild Alpine Meadow Honey', price:24.5, image:'../assets/images/products/wildflower-honey.jpg'}, 2, '500g');">
+                  <i class="fas fa-redo me-1"></i> Reorder
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/storage.js"></script>
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/wishlist.js"></script>
+  <script src="../js/forms.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

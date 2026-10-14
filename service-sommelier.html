@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" data-theme="light" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Sommelier & Foodservice Consulting — Amber & Oak</title>
+  
+  <meta name="description" content="Culinary menu architecture, artisanal cheese pairing, and craft mixology sugar substitution consulting for chefs and hospitality programs.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/rtl.css" id="rtl-stylesheet" disabled>
+</head>
+<body>
+
+  <!-- Main Navigation Bar -->
+  <header class="site-navbar">
+    <div class="container-fluid px-3 px-xl-4 px-xxl-5 d-flex align-items-center justify-content-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="navbar-brand-logo text-decoration-none">
+        <img src="assets/images/logo/logo.svg" alt="Amber &amp; Oak Honey Logo" class="brand-logo-light" height="42">
+        <img src="assets/images/logo/logo-dark.svg" alt="Amber &amp; Oak Honey Logo" class="brand-logo-dark" height="42">
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="d-none d-lg-flex align-items-center gap-1">
+        <div class="dropdown">
+          <a class="nav-link-custom dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item" href="index.html">Home 1 — Raw Honey Store &amp; Sourcing</a></li>
+            <li><a class="dropdown-item" href="home-2.html">Home 2 — B2B Apiculture &amp; Services</a></li>
+          </ul>
+        </div>
+        <a class="nav-link-custom" href="about.html">Our Story</a>
+        <a class="nav-link-custom" href="products.html">Honey Varieties</a>
+        <a class="nav-link-custom" href="health-benefits.html">Health Benefits</a>
+        <a class="nav-link-custom" href="bulk-gifting.html">Bulk &amp; Gifting</a>
+        
+        <div class="dropdown">
+          <a class="nav-link-custom active dropdown-toggle" href="#" data-bs-toggle="dropdown">Services &amp; More</a>
+          <ul class="dropdown-menu shadow-sm">
+            <li><a class="dropdown-item" href="services.html">All Apiary Services</a></li>
+            <li><a class="dropdown-item" href="service-details.html">Apiary Tours &amp; Tasting</a></li>
+            <li><a class="dropdown-item" href="service-pollination.html">Orchard Pollination</a></li>
+            <li><a class="dropdown-item" href="service-bottling.html">Private Label Bottling</a></li>
+            <li><a class="dropdown-item" href="service-adopt-hive.html">Adopt-a-Beehive</a></li>
+            <li><a class="dropdown-item" href="service-lab-testing.html">Purity Lab Testing</a></li>
+            <li><a class="dropdown-item" href="service-sommelier.html">Honey Sommelier</a></li>
+            <li><a class="dropdown-item" href="pricing.html">Pantry &amp; Wholesale Pricing</a></li>
+            <li><a class="dropdown-item" href="login.html">Sign In / Register</a></li>
+            <li><a class="dropdown-item" href="coming-soon.html">Coming Soon Page</a></li>
+            <li><a class="dropdown-item" href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+
+        <a class="nav-link-custom" href="blog.html">Journal</a>
+        <a class="nav-link-custom" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Utilities -->
+      <div class="navbar-actions-wrap">
+        <div class="dropdown">
+          <button class="nav-icon-btn" type="button" id="userAccountDropdown" data-bs-toggle="dropdown" aria-expanded="false" title="My Account">
+            <i class="fas fa-user"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="userAccountDropdown" style="min-width: 190px;">
+            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt me-2 text-warning"></i>Login / Register</a></li>
+            <li><a class="dropdown-item" href="user-dashboard/index.html"><i class="fas fa-user-circle me-2 text-warning"></i>My Account</a></li>
+            <li><a class="dropdown-item" href="user-dashboard/orders.html"><i class="fas fa-box-open me-2 text-warning"></i>My Orders</a></li>
+          </ul>
+        </div>
+
+        <a href="user-dashboard/wishlist.html" class="nav-icon-btn" title="View Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="nav-badge-count wishlist-count-badge" style="display:none;">0</span>
+        </a>
+
+        <button class="nav-icon-btn cart-drawer-trigger" title="Open Cart">
+          <i class="fas fa-shopping-basket"></i>
+          <span class="nav-badge-count cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <button class="btn btn-sm btn-outline-warning py-1 px-2 rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
+          <span class="dir-text">RTL</span>
+        </button>
+
+        <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavMenu" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="collapse d-lg-none" id="mobileNavMenu">
+      <div class="container py-3">
+        <ul class="nav flex-column gap-2">
+          <li class="nav-item"><a class="nav-link-custom" href="index.html">Home 1 (Raw Honey Sourcing)</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="home-2.html">Home 2 (B2B &amp; Services)</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="about.html">Our Story &amp; Apiary</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="products.html">Honey Varieties Catalog</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="health-benefits.html">Health &amp; Medicinal Benefits</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="bulk-gifting.html">Corporate &amp; Wedding Gifting</a></li>
+          <li class="nav-item"><a class="nav-link-custom active" href="services.html">Apiculture Services</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="blog.html">Journal &amp; Recipes</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact Us</a></li>
+          <li class="nav-item border-top pt-2"><a class="nav-link-custom text-warning" href="login.html"><i class="fas fa-sign-in-alt me-1"></i> Login / Register</a></li>
+          <li class="nav-item"><a class="nav-link-custom text-warning" href="user-dashboard/index.html"><i class="fas fa-user me-1"></i> My Account</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner" style="background-image: url('assets/images/hero/hero-service-sommelier.jpg');">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb small">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+          <li class="breadcrumb-item active">Honey Sommelier Consulting</li>
+        </ol>
+      </nav>
+      <span class="badge badge-honey mb-2"><i class="fas fa-wine-glass me-1"></i> Gastronomy & Menu Architecture</span>
+      <h1 class="hero-title">Honey Sommelier & Foodservice Consulting</h1>
+      <p class="hero-desc">Mono-floral tasting flights, pastry sweetness substitutions, and bespoke cocktail formulations for fine-dining kitchens.</p>
+    </div>
+  </section>
+
+  <!-- Service Details Body -->
+  <main class="py-5 bg-surface">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <span class="badge badge-honey mb-2">Culinary Gastronomy</span>
+          <h1 class="font-serif mb-3">Sommelier Pairing & Culinary Development</h1>
+          
+          <img src="assets/images/services/service-sommelier-hero.jpg" alt="Honey Sommelier and Culinary Menu Consulting" class="rounded-4 w-100 mb-4 shadow-sm" style="height: 380px; object-fit: cover;">
+
+          <h4 class="font-serif mb-3">About the Program</h4>
+          <p class="text-muted">
+            Unlock the extraordinary aromatic complexity of unpasteurized raw honeys in your culinary program. Certified by the Italian National Register of Honey Sommeliers, our consulting team collaborates with executive chefs, pastry artisans, and beverage directors to curate transformative flavor pairings.
+          </p>
+          <p class="text-muted">
+            From dialing in exact glycemic sweetness ratios in sourdough laminations to formulating botanical shrubs, raw honey simple syrups, and cheese board pairings, we provide comprehensive gastronomic guidance and staff sensory training.
+          </p>
+
+          <h5 class="font-serif mt-5 mb-3">Consulting Services</h5>
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <div class="p-3 bg-surface-alt rounded-3 border">
+                <i class="fas fa-utensils text-amber mb-2"></i>
+                <h6 class="mb-1">Pastry & Baking Formulations</h6>
+                <small class="text-muted">Calculated glucose-to-fructose ratios for moisture retention and crust caramelization.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-surface-alt rounded-3 border">
+                <i class="fas fa-cocktail text-amber mb-2"></i>
+                <h6 class="mb-1">Cocktail & Beverage Mixology</h6>
+                <small class="text-muted">Cold-soluble raw honey syrups, infused bitters, and sparkling mead aperitifs.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-surface-alt rounded-3 border">
+                <i class="fas fa-cheese text-amber mb-2"></i>
+                <h6 class="mb-1">Artisanal Cheese Pairing</h6>
+                <small class="text-muted">Sensory flavor-mapping contrasting mineral honeydew with aged goat, pecorino, and blues.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-surface-alt rounded-3 border">
+                <i class="fas fa-users-cog text-amber mb-2"></i>
+                <h6 class="mb-1">Staff Sensory Masterclasses</h6>
+                <small class="text-muted">Hands-on staff tasting workshops evaluating floral aromas, crystallization, and acidity.</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Table -->
+          <h5 class="font-serif mt-5 mb-3">Consulting Engagement Tiers</h5>
+          <div class="table-responsive mb-5">
+            <table class="table table-bordered bg-surface-alt">
+              <thead class="table-light">
+                <tr>
+                  <th>Service Tier</th><th>Format & Deliverables</th><th>Duration</th><th>Professional Fee</th>
+                </tr>
+              </thead>
+              <tbody class="small">
+                <tr>
+                  <td><strong>Menu Audit & Pairing Flight</strong></td>
+                  <td>Virtual Review + 8-Honey Tasting Kit + Pairing PDF</td>
+                  <td>2 Hours</td>
+                  <td class="fw-bold text-amber">$350 total</td>
+                </tr>
+                <tr>
+                  <td><strong>On-Site Kitchen Workshop</strong></td>
+                  <td>In-person chef demo, recipe testing, staff training</td>
+                  <td>Half Day (4 Hrs)</td>
+                  <td class="fw-bold text-amber">$850 total</td>
+                </tr>
+                <tr>
+                  <td><strong>Enterprise Culinary Retainer</strong></td>
+                  <td>Ongoing seasonal menu architecture & wholesale supply</td>
+                  <td>Quarterly</td>
+                  <td class="fw-bold text-amber">$2,400 / quarter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- FAQs Accordion -->
+          <h5 class="font-serif mb-3">Frequently Asked Questions</h5>
+          <div class="accordion mb-5" id="serviceFaqAccordion">
+            <div class="accordion-item border rounded-3 mb-2 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  How does raw honey alter baking hydration compared to table sugar?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                <div class="accordion-body small text-muted">
+                  Raw honey is roughly 80% sugars and 17–18% water, requiring an approximate 20% liquid reduction in standard baking formulas and a 15°C drop in oven temperature to prevent over-browning.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border rounded-3 mb-2 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Do you supply samples for kitchen development?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                <div class="accordion-body small text-muted">
+                  Yes. All consulting engagements include our Sommelier Tasting Flight containing 8 distinct single-origin raw honeys and natural syrups.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border rounded-3 mb-2 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Can you provide ongoing bulk supply for customized recipes?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                <div class="accordion-body small text-muted">
+                  Yes. We supply 5kg, 10kg, and 25kg culinary pails directly to restaurant kitchens with batch-consistent moisture and viscosity.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking / Inquiry Sidebar Card -->
+        <div class="col-lg-4">
+          <div class="card border rounded-4 p-4 bg-surface-alt shadow-sm sticky-top" style="top: 100px;">
+            <h5 class="font-serif mb-3">Book Sommelier Consultation</h5>
+            <form onsubmit="event.preventDefault(); FormsHelper.showToast('Consultation inquiry received! Our sommelier team will reach out to arrange your sensory session.', 'success'); this.reset();">
+
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Select Consulting Tier</label>
+                <select class="form-select">
+                  <option>Menu Audit & Pairing Flight ($350)</option>
+                  <option>On-Site Kitchen Workshop ($850)</option>
+                  <option>Enterprise Culinary Retainer ($2,400/qtr)</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Restaurant / Hospitality Brand</label>
+                <input type="text" class="form-control" placeholder="The Timber Barn Bistro" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Executive Chef / Director Name</label>
+                <input type="text" class="form-control" placeholder="Chef Julian Rossi" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Contact Email</label>
+                <input type="email" class="form-control" placeholder="julian@timberbarn.com" required>
+              </div>
+              <button type="submit" class="btn btn-honey w-100">
+                <i class="fas fa-wine-glass me-1"></i> Request Sommelier Consultation
+              </button>
+        
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Newsletter Signup -->
+  <section class="py-5 text-center" style="background: radial-gradient(circle at center, var(--honey-100) 0%, var(--honey-50) 100%);">
+    <div class="container py-3">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <i class="fas fa-paper-plane fa-2x text-amber mb-3"></i>
+          <h3 class="font-serif">Join The Apiary Circle</h3>
+          <p class="text-muted small mb-4">Receive notification of limited single-origin batch releases and receive a 10% coupon on your first order.</p>
+          <form class="newsletter-subscribe-form d-flex gap-2 justify-content-center">
+            <input type="email" class="form-control" placeholder="Enter your email address..." required style="max-width: 320px;">
+            <button type="submit" class="btn btn-honey text-nowrap">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 footer-col">
+          <div class="mb-3">
+            <img src="assets/images/logo/logo-footer.svg" alt="Amber &amp; Oak" height="42">
+          </div>
+          <p class="small">
+            Generational master beekeepers dedicated to sustainable apiculture, non-thermal extraction, and single-origin raw honeys and plant syrups.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2 footer-col">
+          <h5>Honey Varieties</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="products.html">Wild Alpine Meadow</a></li>
+            <li><a href="products.html">Black Forest Honeydew</a></li>
+            <li><a href="products.html">Himalayan Organic</a></li>
+            <li><a href="products.html">Virgin Honeycomb Slabs</a></li>
+            <li><a href="products.html">Medjool Date Nectar</a></li>
+            <li><a href="products.html">Canadian Maple Syrup</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2 footer-col">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="about.html">About Our Apiary</a></li>
+            <li><a href="health-benefits.html">Health Benefits</a></li>
+            <li><a href="bulk-gifting.html">Corporate Gifting</a></li>
+            <li><a href="services.html">Apiary Services</a></li>
+            <li><a href="pricing.html">Pantry Pricing</a></li>
+            <li><a href="contact.html">Contact &amp; Farm Visit</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 footer-col">
+          <h5>Apiary Sanctuary</h5>
+          <p class="small mb-2"><i class="fas fa-map-marker-alt text-warning me-2"></i> 480 Honeycomb Ridge Road, Cascade Foothills, OR 97009</p>
+          <p class="small mb-2"><i class="fas fa-phone-alt text-warning me-2"></i> Helpline: +1 (800) 482-HONEY</p>
+          <p class="small mb-3"><i class="fas fa-envelope text-warning me-2"></i> care@amberandoakhoney.com</p>
+          <div class="p-2 bg-dark rounded small text-warning border border-secondary">
+            <i class="fas fa-shield-alt me-1"></i> Certified USDA Organic &bull; 100% Raw Standard
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <div>&copy; 2026 Amber &amp; Oak Honey Co. All rights reserved. Multipurpose Theme.</div>
+        <div class="d-flex gap-3">
+          <a href="login.html">Login / Register</a>
+          <a href="user-dashboard/index.html">User Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h5 class="mb-0 font-serif"><i class="fas fa-shopping-basket text-amber me-2"></i>Your Honey Basket</h5>
+      <button class="btn-close cart-drawer-close"></button>
+    </div>
+    <div class="cart-drawer-items" id="cart-drawer-items"></div>
+    <div class="cart-drawer-footer">
+      <div class="d-flex justify-content-between mb-2">
+        <span class="text-muted">Subtotal:</span>
+        <span class="fw-bold text-amber" id="cart-drawer-subtotal">$0.00</span>
+      </div>
+      <div class="d-grid gap-2">
+        <a href="cart.html" class="btn btn-honey-outline">View Full Cart</a>
+        <a href="checkout.html" class="btn btn-honey">Proceed to Checkout</a>
+      </div>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/rtl.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

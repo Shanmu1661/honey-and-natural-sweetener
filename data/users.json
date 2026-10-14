@@ -1,0 +1,73 @@
+[
+  {
+    "id": "usr-101",
+    "name": "Eleanor Vance",
+    "email": "eleanor.vance@example.com",
+    "role": "customer",
+    "avatar": "assets/images/testimonials/customer-1.jpg",
+    "phone": "+1 (555) 234-8921",
+    "memberSince": "May 2024",
+    "tier": "Gold Forager",
+    "loyaltyPoints": 480,
+    "addresses": [
+      {
+        "id": "addr-1",
+        "type": "Shipping",
+        "isDefault": true,
+        "name": "Eleanor Vance",
+        "street": "742 Evergreen Botanical Way, Suite 4B",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97201",
+        "country": "United States"
+      },
+      {
+        "id": "addr-2",
+        "type": "Billing",
+        "isDefault": false,
+        "name": "Eleanor Vance",
+        "street": "1200 Pine Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101",
+        "country": "United States"
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "orderUpdates": true,
+      "smsAlerts": false,
+      "dietary": ["Raw Honey Enthusiast", "Organic Only"]
+    }
+  },
+  {
+    "id": "usr-102",
+    "name": "Marcus Aurelius Thorne",
+    "email": "m.thorne@artisanbakes.com",
+    "role": "b2b_client",
+    "avatar": "assets/images/testimonials/customer-2.jpg",
+    "phone": "+1 (555) 902-3341",
+    "memberSince": "February 2023",
+    "tier": "Wholesale Partner",
+    "loyaltyPoints": 1850,
+    "addresses": [
+      {
+        "id": "addr-3",
+        "type": "Commercial",
+        "isDefault": true,
+        "name": "Thorne Artisan Bakery HQ",
+        "street": "88 Miller Avenue, Dock 3",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80202",
+        "country": "United States"
+      }
+    ],
+    "preferences": {
+      "newsletter": true,
+      "orderUpdates": true,
+      "smsAlerts": true,
+      "dietary": ["Bulk Purity Certified"]
+    }
+  }
+]
